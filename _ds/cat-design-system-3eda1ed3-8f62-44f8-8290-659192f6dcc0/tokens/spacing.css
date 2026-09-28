@@ -1,0 +1,45 @@
+:root{
+/* 4px base, with a few editorial jumps at the large end */
+--space-0:0;--space-1:2px;--space-2:4px;--space-3:8px;--space-4:12px;--space-5:16px;--space-6:20px;--space-7:24px;--space-8:32px;--space-9:40px;--space-10:48px;--space-11:64px;--space-12:88px;--space-13:120px;--space-14:168px;
+
+/* Semantic */
+--gap-inline:var(--space-3);
+--gap-stack:var(--space-5);
+--pad-control-y:11px;--pad-control-x:18px;
+--section-gap:clamp(72px,9vw,136px);
+--block-gap:clamp(32px,4vw,56px);
+
+/* Grid */
+--container-max:1360px;
+--container-text:680px;
+--grid-cols:12; /* @kind other */--grid-gutter:24px;--grid-margin:56px;
+
+/* Radius — controls are pills; content boxes stay crisp; photos can go organic. */
+--radius-0:0;--radius-xs:2px;--radius-photo:4px;--radius-sm:4px;--radius-md:8px;--radius-lg:14px;--radius-block:20px;--radius-pill:999px;--radius-round:999px;
+
+/* Organic photo shapes (border-radius values) */
+--shape-arch:999px 999px 6px 6px; /* @kind radius */
+--shape-arch-low:48% 48% 6px 6px / 34% 34% 6px 6px; /* @kind radius */
+--shape-blob-a:62% 38% 54% 46% / 52% 44% 56% 48%; /* @kind radius */
+--shape-blob-b:41% 59% 43% 57% / 58% 46% 54% 42%; /* @kind radius */
+--shape-leaf:6px 160px 6px 160px; /* @kind radius */
+--shape-pebble:46% 54% 50% 50% / 60% 58% 42% 40%; /* @kind radius */
+
+/* Borders */
+--border-width:1px; /* @kind other */--border-width-strong:1.5px; /* @kind other */
+
+/* Elevation — sparing; only things that float above the page get a shadow */
+--shadow-0:none;
+--shadow-1:0 1px 2px rgba(30,27,23,.06),0 2px 8px rgba(30,27,23,.06);
+--shadow-2:0 2px 4px rgba(30,27,23,.05),0 12px 32px rgba(30,27,23,.12);
+--shadow-3:0 4px 8px rgba(30,27,23,.06),0 24px 64px rgba(30,27,23,.18);
+
+/* Motion */
+--ease-out:cubic-bezier(.2,.7,.2,1); /* @kind other */
+--ease-in-out:cubic-bezier(.6,0,.3,1); /* @kind other */
+--dur-fast:120ms; /* @kind other */--dur-base:200ms; /* @kind other */--dur-slow:360ms; /* @kind other */--dur-photo:700ms; /* @kind other */
+
+--z-nav:40; /* @kind other */--z-dropdown:60; /* @kind other */--z-modal:80; /* @kind other */--z-toast:90; /* @kind other */
+}
+@media (max-width:1023px){:root{--grid-cols:8; /* @kind other */--grid-gutter:20px;--grid-margin:32px}}
+@media (max-width:639px){:root{--grid-cols:4; /* @kind other */--grid-gutter:16px;--grid-margin:20px}}

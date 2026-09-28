@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<style>html,body{margin:0;background:#F4EFE5;color:#1E1B17}@view-transition{navigation:auto}::view-transition-old(root),::view-transition-new(root){animation-duration:140ms;animation-timing-function:ease}@media (prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}}h1,h2,h3,h4,h1 em,h2 em,h3 em,.t-display-xl,.t-display-l,.t-display-m,.t-display-xl em,.t-display-l em,.t-display-m em,.t-h1,.t-h2,.t-h3,.c-block__t,.c-stat__n,.t-name,.t-name-l,.c-cat__name,.c-shelter__name{font-family:'Between 2','Bricolage Grotesque',var(--font-headline)!important;font-weight:800!important;font-style:normal!important}.t-name,.t-name-l,.c-cat__name,.c-shelter__name,.t-h3,h3{letter-spacing:-.035em!important}.t-name,.t-name-l,.c-cat__name{font-family:'Between 2','Bricolage Grotesque','Manrope',sans-serif!important;font-style:normal!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/fonts/Manrope-normal-var.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/fonts/DMSerifDisplay-normal.woff2" crossorigin>
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/colors.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/typography.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/base.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/components.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+<link rel="stylesheet" href="cate.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap">
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
+<script src="./support.js"></script>
+<script src="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/_ds_bundle.js"></script>
+<script src="cate-data.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+
+<link rel="icon" type="image/png" href="assets/icon-cream.png">
+<link rel="apple-touch-icon" href="assets/icon-rust.png">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;display=swap">
+<link rel="stylesheet" href="cate.css">
+<style>
+.h-top{grid-template-columns:minmax(0,6fr) minmax(0,1fr) minmax(0,5fr)}
+.h-story{grid-template-columns:minmax(0,4fr) minmax(0,1fr) minmax(0,7fr)}
+.wc-tabs::-webkit-scrollbar{display:none}
+@media (max-width:1023px){.wc-grid{grid-template-columns:1fr 1fr!important}}
+@media (max-width:639px){.wc-grid{grid-template-columns:1fr!important}}
+.h-visit{grid-template-columns:minmax(0,5.4fr) minmax(0,3.6fr) minmax(0,4fr)}
+@media (max-width:1180px){.h-visit{grid-template-columns:1fr 1fr!important}.hv-find{grid-column:1/-1}.hv-mid{padding-left:0!important}}
+@media (max-width:639px){.h-visit{grid-template-columns:1fr!important}.hv-steps{border-left:0!important;padding-left:0!important}.hv-find>div{max-width:none!important}.hv-map{opacity:.35;width:60%!important}}
+.h-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:639px){.h-orb:nth-of-type(n+3){display:none}}.h-stats .c-stat__n{white-space:nowrap;font-size:clamp(36px,4.2vw,60px)}
+@media (max-width:1023px){.h-top,.h-story{grid-template-columns:1fr}.h-top>:nth-child(2),.h-story>:nth-child(2){display:none}.h-top>:last-child{order:-1;max-width:520px}.h-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:1023px){.os{grid-template-columns:1fr!important}}
+@media (max-width:639px){.os-vis{aspect-ratio:.95!important}.os-photo{width:74%!important;right:0!important}.os-note{bottom:auto!important;top:4%!important;width:40%!important}}
+@media (max-width:639px){.h-stats{grid-template-columns:1fr 1fr}.h-grid{row-gap:36px!important}}
+</style>
+</helmet>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Navbar" current="#shelters" signed-in="{{ true }}" hint-size="100%,72px"></x-import>
+<main class="container" style="padding-top:28px;padding-bottom:var(--section-gap)">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.TextLink" variant="quiet" href="Shelters.dc.html" hint-size="auto,24px"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="arrow-left" size="{{ 16 }}" hint-size="16px,16px"></x-import>All shelters</x-import>
+
+<div class="h-top" data-screen-label="Shelter header" style="display:grid;column-gap:var(--grid-gutter);row-gap:40px;align-items:center;margin-top:clamp(24px,3vw,40px)">
+<div style="display:grid;gap:24px">
+<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+<span class="c-verified"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="shield-check" size="{{ 14 }}" stroke="{{ 2 }}" hint-size="14px,14px"></x-import>Verified by CATÉ</span>
+<span class="t-caption">{{ place }} · since {{ since }}</span>
+</div>
+<h1 class="t-display-l">{{ name }}</h1>
+<p class="t-body-l t-secondary" style="margin:0;max-width:520px">{{ lede }}</p>
+<div class="h-stats" style="display:grid;gap:24px;padding:8px 0">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Stat" value="{{ catCount }}" label="cats in care" hint-size="100%,72px"></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Stat" value="{{ adopted }}" label="{{ adoptedLabel }}" tone="{{ 2 }}" seed="{{ 9 }}" hint-size="100%,72px"></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Stat" value="{{ reply }}" label="to reply" seed="{{ 3 }}" hint-size="100%,72px"></x-import>
+</div>
+<div style="display:flex;gap:12px;flex-wrap:wrap">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Button" href="#cats" hint-size="auto,48px">{{ seeLabel }}</x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Button" variant="secondary" icon="calendar" href="#contact" hint-size="auto,48px">Book a visit</x-import>
+</div>
+</div>
+<div></div>
+<div class="h-hero" style="position:relative">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.PhotoFrame" src="{{ heroPhoto }}" alt="{{ heroAlt }}" shape="blob-a" ratio="1/1" inset="{{ heroInset }}" inset-at="bl" hint-size="100%,520px"></x-import>
+<sc-for list="{{ orbit }}" as="o" hint-placeholder-count="0">
+<span aria-hidden="true" class="h-orb" style="position:absolute;left:{{ o.x }};top:{{ o.y }};width:{{ o.size }};aspect-ratio:1;border-radius:50%;background-color:var(--paper-200);background-image:{{ o.bg }};background-size:cover;background-position:center;border:clamp(4px,.5vw,7px) solid var(--bg);box-shadow:0 10px 24px rgba(30,27,23,.12);z-index:2"></span>
+</sc-for>
+</div>
+</div>
+
+<section class="os" data-screen-label="Shelter story" style="position:relative;display:grid;grid-template-columns:minmax(0,1.14fr) minmax(0,1fr);column-gap:clamp(32px,3vw,56px);row-gap:48px;margin-top:var(--section-gap);padding-bottom:clamp(40px,4vw,64px)">
+<div class="os-left" style="display:grid;align-content:start;gap:clamp(32px,3vw,48px)">
+<div class="os-text" style="position:relative;z-index:3;display:grid;gap:20px;padding-top:clamp(8px,1vw,20px)">
+<span style="font:700 13px/1 var(--font-sans);letter-spacing:.2em;text-transform:uppercase;color:#6F665B">Our story</span>
+<h2 style="margin:0;font:800 clamp(44px,4.4vw,80px)/.92 'Between 2','Bricolage Grotesque',var(--font-headline);letter-spacing:-.05em;color:#16130F;text-wrap:balance;max-width:10em">{{ storyTitle }}<svg aria-hidden="true" viewBox="0 0 48 44" style="display:inline-block;width:.46em;height:.46em;margin-left:.16em;vertical-align:-.02em"><path d="M24 40C10 30 4 22 5 13c1-7 8-10 13-7 3 2 5 5 6 8 1-4 4-8 9-9 6-1 11 4 10 11-1 9-8 16-19 24z" fill="none" stroke="#C4643A" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"></path></svg></h2>
+
+</div>
+<div class="os-vis" style="position:relative;width:100%;max-width:560px;aspect-ratio:1.3;isolation:isolate;margin-bottom:clamp(48px,5vw,80px)">
+<svg aria-hidden="true" viewBox="0 0 600 640" preserveAspectRatio="none" style="position:absolute;left:14%;top:0;width:80%;height:100%;z-index:0"><path d="M386 18c78-14 128 34 132 112 3 62-26 104 4 168 34 72 72 118 64 196-8 80-70 124-160 132-110 10-230 8-330-4C28 614-6 560 4 498c10-66 76-86 108-138 34-56 20-118 64-188 50-80 120-138 210-154z" fill="#E3E5D6"></path></svg>
+<svg aria-hidden="true" viewBox="0 0 80 80" style="position:absolute;right:4%;top:-2%;width:clamp(40px,3.6vw,60px);z-index:1"><g stroke="#8E977B" stroke-width="5" stroke-linecap="round" fill="none"><path d="M18 6 l-2 50"></path><path d="M66 18 l-30 44"></path></g></svg>
+<div class="os-photo" style="position:absolute;right:10%;top:10%;width:56%;height:84%;z-index:1;overflow:hidden;border-radius:999px 999px 20px 20px / 46% 46% 20px 20px;background:#DCD6C8">
+<div role="img" aria-label="{{ storyPhotoAlt }}" style="position:absolute;inset:0;background-image:{{ storyPhotoBg }};background-size:cover;background-position:38% 50%"></div>
+</div>
+<svg aria-hidden="true" viewBox="0 0 60 60" style="position:absolute;right:1%;top:30%;width:clamp(32px,2.8vw,48px);z-index:2"><g stroke="#C4643A" stroke-width="4.5" stroke-linecap="round" fill="none"><path d="M10 34 l16 -26"></path><path d="M20 52 l30 -14"></path></g></svg>
+<div class="os-note" aria-hidden="true" style="position:absolute;left:0;bottom:10%;width:30%;z-index:2;display:grid;justify-items:start;gap:4px;transform:rotate(-10deg);transform-origin:left bottom">
+<span style="font:500 clamp(20px,1.7vw,26px)/1.1 'Caveat',cursive;color:#3A352E">{{ storyNote }}</span>
+<svg viewBox="0 0 80 40" style="width:56px;justify-self:end"><path d="M4 16c14 20 40 22 62 4" fill="none" stroke="#3A352E" stroke-width="2.4" stroke-linecap="round"></path><path d="M54 12l13 7-6 13" fill="none" stroke="#3A352E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+</div>
+</div>
+<div class="os-right" style="position:relative;z-index:2;display:grid;align-content:start;gap:clamp(36px,3vw,56px);padding-top:clamp(8px,1vw,20px)">
+<div style="display:grid;gap:clamp(20px,1.8vw,32px);max-width:38em">
+<p style="margin:0;font:400 clamp(17px,1.15vw,22px)/1.62 var(--font-sans);color:#2E2A25;text-wrap:pretty">{{ story1 }}</p>
+<p style="margin:0;font:400 clamp(17px,1.15vw,22px)/1.62 var(--font-sans);color:#2E2A25;text-wrap:pretty">{{ story2 }}</p>
+</div>
+<blockquote style="position:relative;margin:0;padding:clamp(40px,4vw,64px) clamp(28px,4vw,64px) clamp(40px,4vw,60px) clamp(28px,3.4vw,56px);background:#E3E5D6;border-radius:56px 72px 64px 48px / 44px 56px 72px 60px;display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:clamp(16px,1.6vw,28px);row-gap:clamp(24px,2.4vw,36px)">
+<svg aria-hidden="true" viewBox="0 0 80 80" style="position:absolute;right:-18px;top:-26px;width:clamp(44px,4vw,64px)"><g stroke="#C4643A" stroke-width="4.5" stroke-linecap="round" fill="none"><path d="M30 8 l-10 26"></path><path d="M60 22 l-26 18"></path><path d="M72 50 l-32 2"></path></g></svg>
+<span aria-hidden="true" style="font:700 clamp(64px,5vw,96px)/.62 var(--font-sans);color:#8E977B;margin-top:.08em">“</span>
+<p style="margin:0;font:400 clamp(28px,2.3vw,46px)/1.14 var(--font-sans);color:#16130F;letter-spacing:-.02em;text-wrap:pretty">“{{ quote }}”</p>
+<footer style="grid-column:2;display:flex;align-items:center;gap:18px">
+<span aria-hidden="true" style="flex:none;width:clamp(60px,5vw,76px);height:clamp(60px,5vw,76px);border-radius:50%;background-color:var(--paper-200);background-image:{{ personBg }};background-size:cover;background-position:center;box-shadow:0 0 0 4px #F4EFE5"></span>
+<span style="display:grid;gap:6px"><span style="font:700 17px/1.2 var(--font-sans);color:#16130F">{{ person }}</span><span style="font:400 15px/1.3 var(--font-sans);color:#5E584D">{{ roleCap }}</span></span>
+</footer>
+</blockquote>
+</div>
+<svg class="os-yarn" aria-hidden="true" viewBox="0 0 1440 90" preserveAspectRatio="none" style="position:absolute;left:calc(-1 * var(--grid-margin,56px));right:calc(-1 * var(--grid-margin,56px));bottom:-8px;width:calc(100% + 2 * var(--grid-margin,56px));height:clamp(48px,5vw,80px);z-index:2;pointer-events:none"><path d="M0 26C160 -6 300 58 520 56S860 18 1060 44s150 40 176 12c14-16 4-36-12-30-14 6-10 30 12 34 60 12 120-10 204-22" fill="none" stroke="#8E977B" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path></svg>
+</section>
+
+<section id="cats" data-screen-label="Available cats" style="margin-top:var(--section-gap);display:grid;gap:0;scroll-margin-top:96px">
+<div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap">
+<h2 style="margin:0;font:800 clamp(40px,4.8vw,76px)/.96 'Between 2','Bricolage Grotesque',var(--font-headline);letter-spacing:-.05em;color:#16130F;text-wrap:balance">Waiting at {{ name }}</h2>
+<a href="Browse.dc.html" style="display:inline-flex;align-items:center;gap:10px;padding-bottom:8px;font:600 16px/1 var(--font-sans);color:#16130F;text-decoration:none" style-hover="color:var(--accent)">{{ allLabel }}<x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="arrow-right" size="{{ 18 }}" stroke="{{ 1.75 }}" hint-size="18px,18px"></x-import></a>
+</div>
+<div role="tablist" aria-label="Filter cats" class="wc-tabs" style="display:flex;gap:clamp(28px,3.4vw,56px);margin-top:clamp(28px,3vw,40px);border-bottom:1px solid #E0D8C9;overflow-x:auto;scrollbar-width:none">
+<sc-for list="{{ tabList }}" as="t" hint-placeholder-count="4">
+<button type="button" role="tab" aria-selected="{{ t.sel }}" onClick="{{ t.go }}" style="flex:none;position:relative;background:none;border:0;padding:0 0 16px;min-width:44px;min-height:44px;margin-bottom:-1px;cursor:pointer;font:{{ t.font }};color:{{ t.color }};border-bottom:3px solid {{ t.bar }}">{{ t.label }}</button>
+</sc-for>
+</div>
+<div class="wc-grid cate-cards" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,2.6vw,40px);margin-top:clamp(28px,3vw,40px)">
+<sc-for list="{{ cats }}" as="c" hint-placeholder-count="0">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.CatCard" cat="{{ c.cat }}" href="Profile.dc.html?id={{ c.id }}" hint-size="100%,440px"></x-import>
+</sc-for>
+</div>
+<sc-if value="{{ noCats }}" hint-placeholder-val="{{ false }}"><p class="t-secondary" style="margin:32px 0 0">{{ noCatsText }}</p></sc-if>
+</section>
+
+<section class="h-visit" id="contact" data-screen-label="Visit and contact" style="display:grid;column-gap:0;row-gap:48px;margin-top:var(--section-gap);align-items:start">
+<div class="hv-find" style="position:relative;overflow:hidden;min-height:clamp(380px,28vw,440px);padding:clamp(32px,3.4vw,52px);border-radius:24px;background:#DEDCCC;display:flex;flex-direction:column;justify-content:center;gap:0">
+<svg class="hv-map" aria-hidden="true" viewBox="0 0 300 400" preserveAspectRatio="xMaxYMid slice" style="position:absolute;right:0;top:6%;height:88%;width:36%;pointer-events:none">
+<g fill="none" stroke="#B8B6A4" stroke-width="1.6" stroke-linecap="round">
+<path d="M190 20 C150 70 120 110 110 160 C100 210 80 250 20 290"></path>
+<path d="M215 20 C175 75 148 115 138 165 C128 215 105 258 40 300"></path>
+<path d="M300 120 C260 110 220 118 190 150 C170 172 168 200 190 222 C215 245 262 250 300 248"></path>
+<path d="M0 170 C40 176 70 190 96 212"></path><path d="M10 150 C50 156 80 168 104 188"></path>
+<path d="M300 312 C250 300 200 296 170 312 C130 334 100 368 80 400"></path>
+<path d="M300 336 C255 326 210 324 184 340 C150 360 130 385 118 400"></path>
+<path d="M240 20 C225 50 215 80 218 110"></path>
+</g>
+<path d="M150 150 c-14 0 -25 11 -25 25 c0 18 25 45 25 45 s25 -27 25 -45 c0 -14 -11 -25 -25 -25z" fill="#C8532C"></path>
+<circle cx="150" cy="174" r="8.5" fill="#F4EFE5"></circle>
+<g stroke="#2E2A25" stroke-width="1.8" stroke-linecap="round"><path d="M141 128 l-3 -10"></path><path d="M152 126 l2 -11"></path><path d="M162 131 l7 -7"></path></g>
+<text x="118" y="92" transform="rotate(-24 150 80)" style="font:500 21px/1 'Caveat',cursive;fill:#3A352E">“We are</text>
+<text x="136" y="114" transform="rotate(-24 150 80)" style="font:500 21px/1 'Caveat',cursive;fill:#3A352E">here!”</text>
+</svg>
+<div style="position:relative;display:grid;gap:0;max-width:72%">
+<span style="font:600 12.5px/1 var(--font-sans);letter-spacing:.18em;text-transform:uppercase;color:#7C7A68">Find us</span>
+<h2 style="margin: 22px 0 0; font: 800 clamp(40px,3.9vw,60px)/.96 'Between 2','Bricolage Grotesque',var(--font-headline); letter-spacing: -.045em; color: #16130F; text-wrap: pretty; font-size: 46px">{{ address }}</h2>
+<p style="margin:24px 0 0;font:400 clamp(18px,1.45vw,22px)/1.42 var(--font-sans);color:#2A2622;text-wrap:pretty;max-width:26em">{{ directions }}</p>
+<a href="{{ mapsHref }}" target="_blank" rel="noopener" style="margin-top:32px;justify-self:start;display:inline-flex;align-items:center;gap:12px;height:60px;padding:0 26px 0 22px;border-radius:999px;background:#1E1B17;color:#F4EFE5;font:600 17px/1 var(--font-sans);text-decoration:none;transition:background var(--dur-base) var(--ease-out)" style-hover="background:#000"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="map-pin" size="{{ 20 }}" stroke="{{ 1.6 }}" hint-size="20px,20px"></x-import><span>Open in maps</span><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="arrow-right" size="{{ 19 }}" stroke="{{ 1.6 }}" hint-size="19px,19px"></x-import></a>
+</div>
+</div>
+
+<div class="hv-mid" style="display:grid;gap:0;align-content:start;padding:0 clamp(24px,2.6vw,40px) 0 clamp(28px,3vw,48px)">
+<span style="font:700 12.5px/1 var(--font-sans);letter-spacing:.18em;text-transform:uppercase;color:#5E584D">Visiting hours</span>
+<div style="display:grid;gap:12px;margin-top:22px">
+<sc-for list="{{ hours }}" as="h" hint-placeholder-count="2">
+<div style="display:grid;grid-template-columns:auto auto 1fr;align-items:center;gap:16px;min-height:60px;padding:0 20px;border-radius:12px;background:#FAF6EF">
+<span style="display:grid;color:#3A352E"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="calendar" size="{{ 20 }}" stroke="{{ 1.6 }}" hint-size="20px,20px"></x-import></span>
+<span style="font:500 16px/1.2 var(--font-sans);color:#2A2622">{{ h.d }}</span>
+<span class="t-num" style="justify-self: end; text-align: right; font: {{ h.font }}; color: {{ h.color }}; font-size: 14px">{{ h.t }}</span>
+</div>
+</sc-for>
+</div>
+<div style="height:1px;background:#E3DBCC;margin:32px 0"></div>
+<span style="font:700 12.5px/1 var(--font-sans);letter-spacing:.18em;text-transform:uppercase;color:#5E584D">Contact</span>
+<div style="display:grid;gap:16px;margin-top:20px">
+<a href="{{ telHref }}" style="display:flex;align-items:center;gap:18px;text-decoration:none;color:#1E1B17;font:500 17px/1.2 var(--font-sans)"><span style="flex:none;width:44px;height:44px;border-radius:50%;background:#E4E2D6;display:grid;place-items:center"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="phone" size="{{ 19 }}" stroke="{{ 1.6 }}" hint-size="19px,19px"></x-import></span><span class="t-num">{{ phone }}</span></a>
+<a href="{{ mailHref }}" style="display:flex;align-items:center;gap:18px;text-decoration:none;color:#1E1B17;font:500 17px/1.2 var(--font-sans);min-width:0"><span style="flex:none;width:44px;height:44px;border-radius:50%;background:#E4E2D6;display:grid;place-items:center"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="mail" size="{{ 19 }}" stroke="{{ 1.6 }}" hint-size="19px,19px"></x-import></span><span style="overflow-wrap:anywhere">{{ email }}</span></a>
+</div>
+</div>
+
+<div class="hv-steps" style="display:grid;gap:0;align-content:start;padding-left:clamp(28px,3vw,48px);border-left:1px solid #E3DBCC">
+<span style="font:700 12.5px/1.3 var(--font-sans);letter-spacing:.18em;text-transform:uppercase;color:#5E584D">Adopting from {{ name }}</span>
+<ol style="list-style:none;margin:20px 0 0;padding:0;display:grid;gap:0">
+<sc-for list="{{ process }}" as="p" hint-placeholder-count="4">
+<li style="position:relative;display:grid;grid-template-columns:40px minmax(0,1fr);column-gap:20px;padding-bottom:{{ p.pad }}">
+<span aria-hidden="true" style="position:absolute;left:20px;top:44px;bottom:4px;border-left:1px dashed #D3CBBC;display:{{ p.line }}"></span>
+<span class="t-num" style="position:relative;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font:700 14px/1 var(--font-sans);background:{{ p.bg }};color:{{ p.fg }}">{{ p.n }}</span>
+<span style="display:grid;gap:4px;padding-top:2px"><strong style="font:700 17px/1.25 var(--font-sans);letter-spacing:-.01em;color:#16130F">{{ p.t }}</strong><span style="font:400 15.5px/1.45 var(--font-sans);color:#4A4239">{{ p.d }}</span></span>
+</li>
+</sc-for>
+</ol>
+<div style="margin-top:28px;display:flex;align-items:center;gap:14px;padding:18px 20px;border-radius:14px;background:#F4EBDF">
+<span style="flex:none;color:#C8532C;display:grid"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="shield-check" size="{{ 26 }}" stroke="{{ 1.6 }}" hint-size="26px,26px"></x-import></span>
+<span style="font:400 14.5px/1.45 var(--font-sans);color:#3A352E">{{ fee }}</span>
+</div>
+</div>
+</section>
+</main>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Footer" hint-size="100%,360px"></x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { tab: "all", saved: [] };
+  componentDidMount() { if (!window.CATE_MOCK) this.t = setInterval(() => { if (window.CATE_MOCK) { clearInterval(this.t); this.forceUpdate(); } }, 40); }
+  componentWillUnmount() { clearInterval(this.t); }
+  renderVals() {
+    const D = window.CATE_MOCK;
+    const q = (location.search.match(/[?&]id=([\w-]+)/) || [])[1];
+    const slug = (D && D.details[q]) ? q : (D && D.details[this.props.shelter] ? this.props.shelter : "podil");
+    const S = D ? D.shelterBySlug(slug) : { name: "Podil Street Rescue", catCount: 31 };
+    const X = D ? D.details[slug] : {};
+    const pool = D ? D.cats.filter((c) => c.shelter === S.name) : [];
+    const f = { all: () => true, young: (c) => /mo|^1 yr/.test(c.age), senior: (c) => parseInt(c.age) >= 6, kids: (c) => c.compat.kids === "yes" }[this.state.tab];
+    const CMP = [["kids", "baby", "Kids"], ["cats", "cat", "Cats"], ["dogs", "dog", "Dogs"]];
+    const cats = pool.filter(f).slice(0, 3).map((c) => {
+      const saved = this.state.saved.includes(c.id);
+      return { ...c, alt: c.name + ", " + c.line, bg: "url(" + c.photo + ")", 
+        isNew: c.status === "new", badge: "New this week", card: c, savedB: saved,
+        saved: saved ? "true" : "false", saveLabel: (saved ? "Unsave " : "Save ") + c.name,
+        cat: c, savedB: saved, heartColor: saved ? "#B24A25" : "#16130F", heartStyle: saved ? { fill: "#B24A25" } : {},
+        toggle: () => this.setState((st) => ({ saved: st.saved.includes(c.id) ? st.saved.filter((x) => x !== c.id) : [...st.saved, c.id] })),
+        compat: CMP.map(([k, icon, label]) => { const v = c.compat[k]; return { icon, label, title: label + ": " + v, color: v === "yes" ? "#2E2A25" : "#A39A8D", deco: v === "no" ? "line-through" : "none" }; }) };
+    });
+    if (typeof document !== "undefined" && S.name) document.title = S.name + " — CATÉ";
+    return {
+      name: S.name, place: X.place, since: X.since, lede: X.lede,
+      catCount: String(S.catCount), adopted: X.adopted, adoptedLabel: "adopted since " + X.since, reply: X.reply,
+      seeLabel: "See their " + S.catCount + " cats", allLabel: "All " + S.catCount + " cats",
+      heroPhoto: X.heroPhoto, heroInset: X.heroInset, heroAlt: X.heroAlt,
+      orbit: (S.cats || []).filter((p) => p !== X.heroPhoto && p !== X.heroInset).concat(pool.map((c) => c.photo)).filter((p, i, a) => p !== X.heroPhoto && p !== X.heroInset && a.indexOf(p) === i).slice(0, 3)
+        .map((p, i) => ({ bg: "url(" + p + ")", ...[{ x: "74%", y: "-2%", size: "20%" }, { x: "88%", y: "44%", size: "14%" }, { x: "58%", y: "80%", size: "16%" }][i] })),
+      storyTitle: X.storyTitle, story1: X.story1, story2: X.story2, quote: X.quote, person: X.person, role: X.role, personPhoto: X.personPhoto, personBg: X.personPhoto ? "url(" + X.personPhoto + ")" : "none",
+      storyLead: X.storyLead, storyNote: X.storyNote, roleCap: X.role ? X.role.charAt(0).toUpperCase() + X.role.slice(1) : "",
+      storyPhotoBg: "url(" + (X.storyPhoto || "photos/chin-scratch.jpg") + ")", storyPhotoAlt: (X.person || "A volunteer") + " with one of the cats",
+      short: X.short, address: X.address, directions: X.directions, phone: X.phone, email: X.email, fee: X.fee,
+      hours: (X.hours || []).map(([d, t]) => ({ d, t, color: /^\d/.test(t) ? "#16130F" : "#5E584D", font: /^\d/.test(t) ? "600 18px/1.2 var(--font-sans)" : "500 15.5px/1.25 var(--font-sans)" })),
+      mapsHref: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(X.address || ""),
+      telHref: "tel:" + (X.phone || "").replace(/\s/g, ""), mailHref: "mailto:" + (X.email || ""),
+      tab: this.state.tab, setTab: (tab) => this.setState({ tab }),
+      tabList: [["all", "All"], ["young", "Kittens & young"], ["senior", "Seniors"], ["kids", "Good with kids"]].map(([v, label]) => { const on = this.state.tab === v; return { label, sel: on ? "true" : "false", go: () => this.setState({ tab: v }), font: (on ? "600" : "500") + " 17px/1 var(--font-sans)", color: on ? "#16130F" : "#7A7064", bar: on ? "#B24A25" : "transparent" }; }),
+      tabs: [{ value: "all", label: "All" }, { value: "young", label: "Kittens & young" }, { value: "senior", label: "Seniors" }, { value: "kids", label: "Good with kids" }],
+      cats, noCats: !!D && cats.length === 0, noCatsText: "No cats here match that right now. Try another filter, or see all " + S.catCount + " cats.",
+      process: [
+        { n: "01", t: "Apply on CATÉ.", d: X.reads },
+        { n: "02", t: "A short call.", d: "Ten minutes, mostly about your home." },
+        { n: "03", t: "Visit.", d: X.visit },
+        { n: "04", t: "Adoption day.", d: "Sign, pay, and borrow a carrier if you need one." },
+      ].map((p, i, a) => ({ ...p, bg: i % 2 ? "#E4E2D6" : "#F6DDD0", fg: i % 2 ? "#3A352E" : "#B24A25", line: i < a.length - 1 ? "block" : "none", pad: i < a.length - 1 ? "26px" : "0" })),
+    };
+  }
+}
+</script>
+</body>
+</html>

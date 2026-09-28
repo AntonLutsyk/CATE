@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<style>html,body{margin:0;background:#F4EFE5;color:#1E1B17}@view-transition{navigation:auto}::view-transition-old(root),::view-transition-new(root){animation-duration:140ms;animation-timing-function:ease}@media (prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}}h1,h2,h3,h4,h1 em,h2 em,h3 em,.t-display-xl,.t-display-l,.t-display-m,.t-display-xl em,.t-display-l em,.t-display-m em,.t-h1,.t-h2,.t-h3,.c-block__t,.c-stat__n,.t-name,.t-name-l,.c-cat__name,.c-shelter__name{font-family:'Between 2','Bricolage Grotesque',var(--font-headline)!important;font-weight:800!important;font-style:normal!important}.t-name,.t-name-l,.c-cat__name,.c-shelter__name,.t-h3,h3{letter-spacing:-.035em!important}.t-name,.t-name-l,.c-cat__name{font-family:'Between 2','Bricolage Grotesque','Manrope',sans-serif!important;font-style:normal!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/fonts/Manrope-normal-var.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/fonts/DMSerifDisplay-normal.woff2" crossorigin>
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/colors.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/typography.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/base.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/components.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
+<script src="./support.js"></script>
+<script src="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/_ds_bundle.js"></script>
+<script src="cate-data.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+
+<link rel="icon" type="image/png" href="assets/icon-cream.png">
+<link rel="apple-touch-icon" href="assets/icon-rust.png">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/styles.css">
+<link rel="stylesheet" href="cate.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+<style>
+.b-grid .c-cat:not(.c-cat--row){background:#FBF8F2;border-radius:24px;overflow:hidden;gap:0;box-shadow:0 24px 60px -36px rgba(80,58,30,.16),0 0 0 1px rgba(80,58,30,.035);transition:transform 260ms cubic-bezier(.2,.7,.2,1),box-shadow 260ms}
+.b-grid .c-cat:not(.c-cat--row):hover{transform:translateY(-2px);box-shadow:0 30px 70px -36px rgba(80,58,30,.22),0 0 0 1px rgba(80,58,30,.04)}
+.b-grid .c-cat .c-cat__media{border-radius:0!important;aspect-ratio:10/11;-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M0%200H400V486C330%20478%20262%20494%20190%20490C118%20486%2058%20478%200%20487Z%22%2F%3E%3C%2Fsvg%3E") 0 0/100% 100% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M0%200H400V486C330%20478%20262%20494%20190%20490C118%20486%2058%20478%200%20487Z%22%2F%3E%3C%2Fsvg%3E") 0 0/100% 100% no-repeat}
+.b-grid .c-cat .c-cat__head{padding:14px 26px 0;align-items:baseline;gap:4px 12px}
+.b-grid .c-cat .c-cat__name{font-size:27px!important;line-height:1!important;letter-spacing:-.035em!important;font-weight:800!important}
+.b-grid .c-cat .c-cat__meta{font:500 13px/1 var(--font-sans);letter-spacing:0;color:#6F665B;gap:8px;flex-wrap:nowrap}
+.b-grid .c-cat .c-cat__line{padding:0 26px;margin-top:10px!important;font:400 15px/1.5 var(--font-sans)!important;font-style:normal!important;letter-spacing:0!important;color:#5A5248!important;text-wrap:pretty;margin-bottom:20px}
+.b-grid .c-cat .c-cat__foot{margin:auto 26px 0;padding:16px 0 22px;border-top:1px solid rgba(80,58,30,.09);gap:8px 18px;font:500 12.5px/1 var(--font-sans);letter-spacing:0;color:#8A8074}
+.b-grid .c-cat .c-cat__foot *{font-weight:500!important;font-size:12.5px!important;color:#8A8074}
+.b-grid .c-cat .c-cat__foot > *{gap:18px}
+.b-grid .c-cat .c-cat__foot svg{width:13px!important;height:13px!important;stroke-width:1.5;opacity:.75}
+.b-grid .c-cat .c-cat__loc{gap:6px}
+.b-grid .c-cat .c-cat__save,.b-grid .c-cat .c-cat__status{z-index:2}
+.b-grid .c-cat .c-cat__status{left:16px;top:16px}.b-grid .c-cat .c-cat__save{right:16px;top:16px}
+.b-grid .c-cat .c-cat__status .c-badge{box-shadow:none;font-size:12px;letter-spacing:.12em;font-weight:700;padding:6px 10px;background:rgba(251,248,242,.96)}
+.b-grid .c-cat .c-cat__save .c-iconbtn,.b-grid .c-cat .c-cat__save button{box-shadow:none!important;background:rgba(251,248,242,.96)!important;border:0!important;width:36px;height:36px}
+.b-grid .c-cat .c-cat__save svg{width:17px;height:17px}
+
+.c-cat__no{display:none!important}.c-cat:not(.c-cat--row):not(.c-cat--feature){align-self:stretch}.c-cat:not(.c-cat--row):not(.c-cat--feature) .c-cat__foot{margin-top:auto}
+
+body{margin:0;background:var(--bg)}
+a{color:var(--text-primary)}a:hover{color:var(--accent)}
+.b-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.b-span2{grid-column:span 2}
+.b-lead{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+@media (max-width:1023px){.b-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.b-lead{grid-template-columns:1fr}}
+@media (max-width:639px){
+.b-grid{grid-template-columns:1fr;row-gap:44px!important}.b-span2{grid-column:auto}
+.b-filters{flex-wrap:nowrap!important;overflow-x:auto;margin-inline:calc(var(--grid-margin)*-1);padding-inline:var(--grid-margin);scrollbar-width:none}
+.b-filters>*{flex:none}
+.b-tools{width:100%;justify-content:space-between}
+.b-hide-m{display:none!important}
+.b-pages .c-pages__sum{display:none}.b-pages .c-pages{flex-wrap:wrap}
+.b-filters,#more-filters,.b-tools{display:none!important}.b-mbar{display:flex!important}}
+.b-sheet-in{animation:bsheet 320ms cubic-bezier(.2,.7,.2,1)}@keyframes bsheet{from{transform:translateY(24px);opacity:.4}}
+.b-sheet .c-seg{max-width:100%;overflow-x:auto;scrollbar-width:none}
+.c-wordmark{display:inline-block!important;width:104px;height:36px;background:url(assets/logo-ink.png) left center/contain no-repeat;font-size:0!important;color:transparent!important;text-decoration:none}
+.c-footer .c-wordmark{background-image:url(assets/logo-paper.png);width:139px;height:48px}
+.c-nav__in{align-items:center!important}.c-nav__in>.c-wordmark{display:block!important;flex:none;align-self:center;margin:0}.c-nav__links,.c-nav__end{align-items:center}
+:root{--radius-photo:20px;--radius-md:20px;--radius-lg:20px;--radius-block:20px}
+.c-block__photo{right:0!important;top:0!important;bottom:0!important;width:52%!important;aspect-ratio:auto!important;border-radius:58% 0 0 42% / 50% 0 0 50%!important}
+.c-block__photo img{object-position:right center}
+.c-block--has-photo .c-block__t,.c-block--has-photo .c-block__line{max-width:44%}
+@media (max-width:639px){.c-block--has-photo .c-block__t,.c-block--has-photo .c-block__line{max-width:none}}
+@media (max-width:639px){.c-block__photo{position:relative!important;top:auto!important;bottom:auto!important;width:auto!important;aspect-ratio:4/3!important;margin:8px calc(clamp(24px,2.6vw,36px)*-1) calc(clamp(24px,2.6vw,36px)*-1)!important;border-radius:50% 50% 0 0 / 22% 22% 0 0!important}}
+a.c-block--rust:hover{color:var(--block-rust-ink)}a.c-block--charcoal:hover{color:var(--block-charcoal-ink)}a.c-block--sage:hover{color:var(--block-sage-ink)}
+.c-traits{gap:8px!important}.c-traits li{background:var(--paper-200);color:var(--ink-900);font-weight:600;padding:7px 14px;border-radius:var(--radius-pill);line-height:1.2}.c-traits li::first-letter{text-transform:uppercase}.c-traits li:not(:last-child)::after{content:none!important}
+:root{--font-headline:"Bricolage Grotesque","Manrope",ui-sans-serif,sans-serif;
+--display-xl-size:clamp(60px,8vw,128px);--display-xl-lh:.9;--display-xl-track:-.045em;
+--display-l-size:clamp(50px,6vw,96px);--display-l-lh:.92;--display-l-track:-.04em;
+--display-m-size:clamp(40px,4.6vw,72px);--display-m-lh:.95;--display-m-track:-.035em;
+--h1-size:clamp(38px,4.2vw,62px);--h1-lh:.96;--h1-track:-.032em;
+--h2-size:clamp(30px,3vw,44px);--h2-lh:1;--h2-track:-.028em;
+--h3-size:clamp(22px,2vw,28px);--h3-lh:1.1;--h3-track:-.018em}
+.t-display-xl,.t-display-l,.t-display-m,.t-h1,h1,.t-h2,h2{font-weight:800;font-kerning:normal;font-feature-settings:"kern","liga"}
+.t-h3,h3{font:800 var(--h3-size)/var(--h3-lh) var(--font-headline)!important;letter-spacing:var(--h3-track)}
+.t-display-xl em,.t-display-l em,.t-display-m em,.t-h1 em,h1 em,h2 em{font-family:var(--font-sans);font-weight:400;letter-spacing:-.01em}
+.c-block__t{font-family:var(--font-headline)!important;font-weight:800!important;letter-spacing:-.035em!important;line-height:.95!important}
+.c-stat__n{font-family:var(--font-headline);font-weight:800;letter-spacing:-.025em}
+.c-divider__label,.c-block__eyebrow,.t-overline{font-family:var(--font-sans)}
+.t-tagline-l{color:var(--ink-500)}
+:root{--font-headline:"Bricolage Grotesque","Manrope",ui-sans-serif,sans-serif}
+.t-display-xl,.t-display-l,.t-display-m,.t-h1,h1,.t-h2,h2,.t-h3,h3,.c-block__t,.c-stat__n{font-variation-settings:"opsz" 96,"wdth" 100}
+.c-search{overflow:hidden}
+.c-search__seg:focus,.c-search__seg:focus-visible{outline:none!important;box-shadow:inset 0 0 0 2px var(--accent)}
+.c-search__seg:first-child{border-radius:var(--radius-pill) 0 0 var(--radius-pill)!important}
+
+*,*::before,*::after{font-style:normal!important}
+.c-nav__links a{white-space:nowrap}.c-nav__in>.c-wordmark{background-position:left 60%!important}.c-nav__in{display:grid!important;grid-template-columns:1fr auto 1fr}.c-nav__in>nav{justify-self:center}.c-nav__in>.c-nav__end{justify-self:end}.c-nav__in>.c-wordmark{justify-self:start}@media (max-width:1023px){.c-nav__in{display:flex!important}}.c-nav__in{gap:clamp(16px,2.4vw,40px)!important}
+
+.c-footer{background:#201D1A!important;padding:clamp(72px,7vw,112px) 0 40px!important}
+.c-footer__cols{grid-template-columns:minmax(0,5.2fr) repeat(3,minmax(0,2.2fr))!important;row-gap:48px!important;column-gap:0!important;align-items:start}
+.c-footer__lead{grid-column:auto!important;gap:32px!important;padding-right:clamp(24px,4vw,72px)!important}
+.c-footer__lead::after{content:"";display:block;width:64px;height:16px;margin-top:-6px;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2016%22%3E%3Cpath%20d%3D%22M2%2010%20C8%202%2014%202%2016%208%20C18%2014%2024%2014%2026%208%20C28%202%2034%202%2036%208%20C38%2014%2044%2014%2046%208%20C48%204%2054%204%2062%209%22%20fill%3D%22none%22%20stroke%3D%22%23C8532C%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E") left center/contain no-repeat}
+.c-footer__lead p{font:400 clamp(26px,2.3vw,34px)/1.26 var(--font-sans)!important;color:#F4EFE5!important;max-width:15em!important;margin:0;letter-spacing:-.01em;text-wrap:balance}
+.c-footer .c-wordmark{width:212px!important;height:74px!important}
+.c-footer__cols>div:not(.c-footer__lead){padding:10px 0 10px clamp(24px,3vw,48px);border-left:1px solid #3A3530;margin-top:48px}
+.c-footer__cols>div:nth-child(2){border-left:0;padding-left:0}
+.c-footer__h{font:600 12px/1 var(--font-sans)!important;letter-spacing:.2em!important;color:#A89E91!important;margin-bottom:28px!important}
+.c-footer ul{gap:18px!important;font:500 17px/1.3 var(--font-sans)!important}
+.c-footer ul a{color:#F4EFE5!important}
+.c-footer__base{margin-top:clamp(56px,6vw,96px)!important;padding-top:32px!important;border-top:1px solid #3A3530!important;font:400 14.5px/1.4 var(--font-sans)!important;color:#A89E91!important;gap:12px 36px!important;align-items:center}
+.c-footer__base>span:first-child{padding-right:36px;border-right:1px solid #3A3530;line-height:2.4}
+.c-footer__base a{color:#F4EFE5!important}
+@media (max-width:1023px){.c-footer__cols{grid-template-columns:repeat(3,minmax(0,1fr))!important}.c-footer__lead{grid-column:1/-1!important;padding-right:0!important}.c-footer__cols>div:not(.c-footer__lead){margin-top:0}}
+@media (max-width:639px){.c-footer__cols{grid-template-columns:1fr 1fr!important}.c-footer__cols>div:not(.c-footer__lead){border-left:0;padding-left:0}.c-footer__base>span:first-child{border-right:0;padding-right:0;width:100%}.c-footer__base>span:last-child{margin-left:0!important}}
+.c-footer ul li:nth-child(n+4){display:none!important}
+.c-footer__cols>div:nth-child(4) ul li:nth-child(3),.c-footer__cols>div:nth-child(4) ul li:nth-child(4){display:none!important}
+.c-footer__cols>div:nth-child(4) ul li:nth-child(5){display:list-item!important}
+</style>
+</helmet>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Navbar" current="#adopt" hint-size="100%,72px"></x-import>
+<main class="container" data-screen-label="Browse" style="padding-top:clamp(28px,4vw,48px);padding-bottom:var(--section-gap)">
+<div class="b-lead" style="display:grid;column-gap:var(--grid-gutter);row-gap:24px;align-items:start;margin-bottom:40px">
+<div style="display:grid;gap:14px">
+<div style="display:flex;align-items:center;gap:12px">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Squiggle" width="{{ 36 }}" height="{{ 10 }}" cycles="{{ 2 }}" hint-size="36px,10px"></x-import>
+<span class="t-overline t-muted">Adopt · Kyiv region</span>
+</div>
+<h1 aria-live="polite" style="margin:0;font:800 clamp(44px,5vw,80px)/.95 'Between 2','Bricolage Grotesque',var(--font-headline);letter-spacing:-.05em;color:#16130F;max-width:12em;text-wrap:balance">{{ headline }}</h1>
+</div>
+<div style="display:flex;flex-wrap:wrap;justify-content:flex-end;gap:12px;align-items:center" class="b-tools">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Select" size="s" value="{{ sort }}" on-change="{{ setSort }}" options="{{ sortOptions }}" style="width:190px" hint-size="190px,40px"></x-import>
+<span class="b-hide-m"><x-import component-from-global-scope="CATDesignSystem_3eda1e.SegmentedControl" label="View" value="{{ view }}" on-change="{{ setView }}" options="{{ viewOptions }}" hint-size="140px,40px"></x-import></span>
+</div>
+</div>
+
+<div class="b-mbar" style="display:none;align-items:center;gap:10px;padding-bottom:16px;border-bottom:1px solid var(--border)">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.FilterChip" icon="sliders-horizontal" selected="{{ hasTags }}" count="{{ activeCountS }}" aria-haspopup="dialog" on-click="{{ openSheet }}" hint-size="auto,44px">Filters</x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Select" size="s" value="{{ sort }}" on-change="{{ setSort }}" options="{{ sortOptions }}" style="flex:1;min-width:0" hint-size="100%,40px"></x-import>
+</div>
+<sc-if value="{{ sheetOpen }}" hint-placeholder-val="{{ false }}">
+<div class="b-sheet" role="dialog" aria-modal="true" aria-label="Filters" onClick="{{ sheetBg }}" style="position:fixed;inset:0;z-index:80;display:flex;align-items:flex-end;background:rgba(30,27,23,.52)">
+<div class="b-sheet-in" style="width:100%;max-height:88vh;overflow-y:auto;background:var(--bg);border-radius:20px 20px 0 0;display:grid;gap:28px;padding:10px 20px 0">
+<span aria-hidden="true" style="justify-self:center;width:40px;height:4px;border-radius:2px;background:var(--paper-300)"></span>
+<div style="display:flex;align-items:center;justify-content:space-between;margin-top:-8px"><h2 style="margin:0;font:800 26px/1 'Between 2','Bricolage Grotesque',var(--font-headline);letter-spacing:-.03em">Filters</h2><x-import component-from-global-scope="CATDesignSystem_3eda1e.IconButton" icon="x" label="Close filters" on-click="{{ closeSheet }}" hint-size="44px,44px"></x-import></div>
+<section style="display:grid;gap:12px"><span class="t-overline t-muted">Good with</span><div style="display:flex;flex-wrap:wrap;gap:8px">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.FilterChip" selected="{{ kidsOn }}" count="{{ nKids }}" on-click="{{ toggleKids }}" hint-size="auto,40px">Kids</x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.FilterChip" selected="{{ catsOn }}" count="{{ nCats }}" on-click="{{ toggleCats }}" hint-size="auto,40px">Other cats</x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.FilterChip" selected="{{ dogsOn }}" count="{{ nDogs }}" on-click="{{ toggleDogs }}" hint-size="auto,40px">Dogs</x-import>
+</div></section>
+<section style="display:grid;gap:12px"><span class="t-overline t-muted">Distance</span><div style="display:flex"><x-import component-from-global-scope="CATDesignSystem_3eda1e.FilterChip" selected="{{ nearOn }}" count="{{ nNear }}" on-click="{{ toggleNear }}" hint-size="auto,40px">Within 10 mi</x-import></div></section>
+<section style="display:grid;gap:12px"><span class="t-overline t-muted">Age</span><x-import component-from-global-scope="CATDesignSystem_3eda1e.SegmentedControl" label="Age" value="{{ age }}" on-change="{{ setAge }}" options="{{ ageOptions }}" hint-size="100%,40px"></x-import></section>
+<section style="display:grid;gap:12px"><span class="t-overline t-muted">Sex</span><x-import component-from-global-scope="CATDesignSystem_3eda1e.SegmentedControl" label="Sex" value="{{ sex }}" on-change="{{ setSex }}" options="{{ sexOptions }}" hint-size="100%,40px"></x-import></section>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Checkbox" label="Hide cats with a pending application" checked="{{ hidePending }}" on-change="{{ togglePending }}" hint-size="100%,28px"></x-import>
+<div style="position:sticky;bottom:0;display:flex;align-items:center;gap:12px;margin:0 -20px;padding:14px 20px calc(14px + env(safe-area-inset-bottom));background:var(--bg);border-top:1px solid var(--border)">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Button" variant="ghost" on-click="{{ clearAll }}" disabled="{{ noTags }}" hint-size="auto,48px">Clear all</x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Button" block="{{ true }}" on-click="{{ closeSheet }}" style="flex:1" hint-size="100%,48px">{{ showLabel }}</x-import>
+</div>
+</div>
+</div>
+</sc-if>
+<div class="b-filters" style="display:flex;flex-wrap:wrap;justify-content:flex-start;gap:12px;align-items:center;padding-bottom:20px;border-bottom:1px solid var(--border)">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.FilterChip" icon="sliders-horizontal" selected="{{ moreOpen }}" aria-expanded="{{ moreOpenS }}" on-click="{{ toggleMore }}" hint-size="auto,40px">{{ moreLabel }}</x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.FilterChip" selected="{{ nearOn }}" count="{{ nNear }}" on-click="{{ toggleNear }}" hint-size="auto,40px">Within 10 mi</x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.FilterChip" selected="{{ kidsOn }}" count="{{ nKids }}" on-click="{{ toggleKids }}" hint-size="auto,40px">Good with kids</x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.FilterChip" selected="{{ catsOn }}" count="{{ nCats }}" on-click="{{ toggleCats }}" hint-size="auto,40px">Lives with cats</x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.FilterChip" selected="{{ dogsOn }}" count="{{ nDogs }}" on-click="{{ toggleDogs }}" hint-size="auto,40px">Good with dogs</x-import>
+<span aria-hidden="true" class="b-hide-m" style="width:1px;height:32px;background:#DDD3C2;margin-left:auto"></span>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.SegmentedControl" label="Age" value="{{ age }}" on-change="{{ setAge }}" options="{{ ageOptions }}" hint-size="320px,40px"></x-import>
+</div>
+<sc-if value="{{ moreOpen }}" hint-placeholder-val="{{ false }}">
+<div id="more-filters" style="display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center;padding:20px 0;border-bottom:1px solid var(--border)">
+<div style="display:flex;align-items:center;gap:12px"><span style="font:600 14px/1 var(--font-sans);color:#3A352E">Sex</span><x-import component-from-global-scope="CATDesignSystem_3eda1e.SegmentedControl" label="Sex" value="{{ sex }}" on-change="{{ setSex }}" options="{{ sexOptions }}" hint-size="220px,40px"></x-import></div>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Checkbox" label="Hide cats with a pending application" checked="{{ hidePending }}" on-change="{{ togglePending }}" hint-size="auto,28px"></x-import>
+</div>
+</sc-if>
+<div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding-top:16px;min-height:48px">
+<sc-for list="{{ tags }}" as="t" hint-placeholder-count="0">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Tag" on-remove="{{ t.remove }}" hint-size="auto,32px">{{ t.label }}</x-import>
+</sc-for>
+<sc-if value="{{ hasTags }}" hint-placeholder-val="{{ false }}"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Button" variant="ghost" size="s" on-click="{{ clearAll }}" hint-size="auto,32px">Clear all</x-import></sc-if>
+<span aria-live="polite" style="margin-left:auto;font:500 15px/1 var(--font-sans);color:#6F665B">{{ resultsLabel }}</span>
+</div>
+
+<sc-if value="{{ isEmpty }}" hint-placeholder-val="{{ false }}">
+<div style="margin-top:40px;border-top:0">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.EmptyState" title="No cats match all of that — yet." photo="photos/ginger-sleep.jpg" actions="{{ emptyActions }}" hint-size="100%,320px">{{ emptyHint }}</x-import>
+</div>
+</sc-if>
+
+<sc-if value="{{ isGrid }}" hint-placeholder-val="{{ true }}">
+<div class="b-grid cate-cards" style="display:grid;column-gap:var(--grid-gutter);row-gap:56px;margin-top:40px">
+<sc-for list="{{ first }}" as="c" hint-placeholder-count="4">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.CatCard" cat="{{ c }}" href="Profile.dc.html?id={{ c.id }}" hint-size="100%,440px"></x-import>
+</sc-for>
+<sc-if value="{{ showBlockA }}" hint-placeholder-val="{{ true }}">
+<div class="b-span2" style="display:flex">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.ColorBlock" tone="sage" eyebrow="Saved search" title="{{ alertTitle }}" line="{{ alertLine }}" link-label="{{ alertLink }}" href="{{ alertHref }}" on-click="{{ saveSearch }}" style="flex:1" hint-size="100%,300px"></x-import>
+</div>
+</sc-if>
+<sc-for list="{{ second }}" as="c" hint-placeholder-count="2">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.CatCard" cat="{{ c }}" href="Profile.dc.html?id={{ c.id }}" hint-size="100%,440px"></x-import>
+</sc-for>
+<sc-if value="{{ showBlockB }}" hint-placeholder-val="{{ true }}">
+<div class="b-span2" style="display:flex">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.ColorBlock" tone="charcoal" eyebrow="Waiting 212 days" title="Walter, 12" line="A retired gentleman seeking a warm radiator. Fee waived for seniors this month." link-label="Meet Walter" href="Profile.dc.html?id=0088" photo="photos/ginger-stretch.jpg" photo-shape="pebble" style="flex:1" hint-size="100%,300px"></x-import>
+</div>
+</sc-if>
+</div>
+</sc-if>
+
+<sc-if value="{{ isList }}" hint-placeholder-val="{{ false }}">
+<div style="display:grid;gap:12px;margin-top:32px;max-width:860px">
+<sc-for list="{{ all }}" as="c" hint-placeholder-count="4">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.CatCard" variant="row" cat="{{ c }}" href="Profile.dc.html?id={{ c.id }}" hint-size="100%,96px"></x-import>
+</sc-for>
+</div>
+</sc-if>
+
+<sc-if value="{{ hasPages }}" hint-placeholder-val="{{ true }}">
+<div class="b-pages" style="margin-top:64px;padding-top:24px;border-top:1px solid var(--border)">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Pagination" page="{{ page }}" total="{{ pages }}" on-change="{{ setPage }}" summary="{{ pageSummary }}" hint-size="100%,48px"></x-import>
+</div>
+</sc-if>
+</main>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Footer" hint-size="100%,360px"></x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { kids: false, cats: false, dogs: false, near: false, age: "Any", sex: "Any", hidePending: false, sort: "long", view: "grid", page: 1, more: false, alerted: false, sheet: false };
+  componentDidMount() {
+    const q = new URLSearchParams(location.search); const a = (q.get("age") || "").toLowerCase();
+    const map = { kitten: "Kitten", young: "Young", adult: "Adult", senior: "Senior" };
+    const n = {}; if (map[a]) n.age = map[a]; ["kids", "cats", "dogs"].forEach((k) => { if (q.get(k) === "1") n[k] = true; });
+    if (Object.keys(n).length) this.setState(n);
+    if (!window.CATE_MOCK) this.t = setInterval(() => { if (window.CATE_MOCK) { clearInterval(this.t); this.forceUpdate(); } }, 40);
+  }
+  componentWillUnmount() { clearInterval(this.t); document.documentElement.style.overflow = ""; }
+  sheet(on) { this.setState({ sheet: on }); document.documentElement.style.overflow = on ? "hidden" : ""; if (on) { this.esc = (e) => { if (e.key === "Escape") this.sheet(false); }; document.addEventListener("keydown", this.esc); } else document.removeEventListener("keydown", this.esc); }
+  set(p) { this.setState({ ...p, page: p.page || 1 }); if (p.page) { const el = document.querySelector(".b-lead"); el && window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 96, behavior: "smooth" }); } }
+  renderVals() {
+    const D = window.CATE_MOCK, st = this.state;
+    const base = {
+      sortOptions: [{ value: "long", label: "Waiting longest" }, { value: "new", label: "Newest first" }, { value: "near", label: "Nearest" }],
+      viewOptions: [{ value: "grid", label: "Grid" }, { value: "list", label: "List" }],
+      ageOptions: ["Any", "Kitten", "Young", "Adult", "Senior"], sexOptions: ["Any", "Female", "Male"],
+      sort: st.sort, view: st.view, age: st.age, sex: st.sex, hidePending: st.hidePending, page: st.page,
+      kidsOn: st.kids, catsOn: st.cats, dogsOn: st.dogs, nearOn: st.near, moreOpen: st.more, moreOpenS: st.more ? "true" : "false",
+      isGrid: st.view === "grid", isList: st.view === "list",
+      setSort: (v) => this.set({ sort: v }), setView: (v) => this.set({ view: v }), setAge: (v) => this.set({ age: v }), setSex: (v) => this.set({ sex: v }),
+      toggleKids: () => this.set({ kids: !st.kids }), toggleCats: () => this.set({ cats: !st.cats }), toggleDogs: () => this.set({ dogs: !st.dogs }), toggleNear: () => this.set({ near: !st.near }),
+      togglePending: () => this.set({ hidePending: !st.hidePending }), toggleMore: () => this.setState({ more: !st.more }),
+      setPage: (p) => this.set({ page: p }),
+      sheetOpen: st.sheet, openSheet: () => this.sheet(true), closeSheet: () => this.sheet(false), sheetBg: (e) => { if (e.target === e.currentTarget) this.sheet(false); },
+      headline: "Cats waiting in Kyiv.", resultsLabel: "", first: [], second: [], all: [], tags: [],
+    };
+    if (!D) return base;
+    const dist = {}; (D.sheltersAll || []).forEach((s) => { dist[s.name] = parseFloat(s.distance) || 99; });
+    const yrs = (a) => { const n = parseFloat(a) || 0; return /mo/.test(a) ? n / 12 : n; };
+    const band = (c) => { const y = yrs(c.age); return y < 1 ? "Kitten" : y < 4 ? "Young" : y < 10 ? "Adult" : "Senior"; };
+    const pool = D.cats.filter((c) => c.status !== "adopted");
+    const pass = (c, skip) => (skip === "kids" || !st.kids || c.compat.kids === "yes") && (skip === "cats" || !st.cats || c.compat.cats === "yes") && (skip === "dogs" || !st.dogs || c.compat.dogs === "yes")
+      && (skip === "near" || !st.near || (dist[c.shelter] || 99) <= 10) && (skip === "age" || st.age === "Any" || band(c) === st.age)
+      && (st.sex === "Any" || c.sex === st.sex) && (!st.hidePending || c.status !== "pending");
+    const cnt = (k, f) => pool.filter((c) => pass(c, k) && f(c)).length;
+    let list = pool.filter((c) => pass(c));
+    const S = { long: (a, b) => (b.waiting || 0) - (a.waiting || 0), new: (a, b) => (b.status === "new") - (a.status === "new") || b.id.localeCompare(a.id), near: (a, b) => (dist[a.shelter] || 99) - (dist[b.shelter] || 99) };
+    list = list.slice().sort(S[st.sort] || S.long);
+    const n = list.length, per = st.view === "grid" ? 8 : 12, pages = Math.max(1, Math.ceil(n / per)), page = Math.min(st.page, pages);
+    const slice = list.slice((page - 1) * per, page * per);
+    const tags = [];
+    if (st.near) tags.push({ label: "Within 10 mi", remove: () => this.set({ near: false }) });
+    if (st.kids) tags.push({ label: "Good with kids", remove: () => this.set({ kids: false }) });
+    if (st.cats) tags.push({ label: "Lives with cats", remove: () => this.set({ cats: false }) });
+    if (st.dogs) tags.push({ label: "Good with dogs", remove: () => this.set({ dogs: false }) });
+    if (st.age !== "Any") tags.push({ label: st.age, remove: () => this.set({ age: "Any" }) });
+    if (st.sex !== "Any") tags.push({ label: st.sex, remove: () => this.set({ sex: "Any" }) });
+    if (st.hidePending) tags.push({ label: "No pending", remove: () => this.set({ hidePending: false }) });
+    const ageWord = { Kitten: "kittens", Young: "young cats", Adult: "adult cats", Senior: "senior cats" }[st.age] || "cats";
+    const quals = [st.kids && "good with kids", st.cats && "fine with other cats", st.dogs && "good with dogs"].filter(Boolean);
+    const num = n === 1 ? "One " + ageWord.replace(/s$/, "").replace(/ies$/, "y") : n + " " + ageWord;
+    const headline = n === 0 ? "No matches yet." : quals.length ? num + (n === 1 ? " who is " : " who are ") + (quals.length > 2 ? quals.slice(0, -1).join(", ") + " and " + quals[quals.length - 1] : quals.join(" and ")) + "." : num + (st.near ? " within 10 miles." : " waiting in Kyiv.");
+    const reset = () => this.set({ kids: false, cats: false, dogs: false, near: false, age: "Any", sex: "Any", hidePending: false });
+    const loosen = tags.length ? tags[tags.length - 1] : null;
+    const Btn = window.CATDesignSystem_3eda1e && window.CATDesignSystem_3eda1e.Button;
+    return { ...base,
+      nKids: cnt("kids", (c) => c.compat.kids === "yes"), nCats: cnt("cats", (c) => c.compat.cats === "yes"), nDogs: cnt("dogs", (c) => c.compat.dogs === "yes"), nNear: cnt("near", (c) => (dist[c.shelter] || 99) <= 10),
+      moreLabel: (st.sex !== "Any" || st.hidePending) ? "More filters · " + ((st.sex !== "Any") + st.hidePending) : "More filters",
+      headline, tags, hasTags: tags.length > 0, noTags: tags.length === 0, clearAll: reset, activeCountS: tags.length ? tags.length : undefined, showLabel: n === 0 ? "No cats match" : "Show " + (n === 1 ? "1 cat" : n + " cats"),
+      resultsLabel: n === 1 ? "1 cat" : n + " cats", isEmpty: n === 0,
+      emptyHint: loosen ? "Try removing “" + loosen.label + "” — " + (pool.filter((c) => pass(c, { "Good with kids": "kids", "Lives with cats": "cats", "Good with dogs": "dogs", "Within 10 mi": "near" }[loosen.label] || "age")).length) + " cats appear." : "Try another combination.",
+      emptyActions: Btn ? React.createElement(Btn, { onClick: reset }, "Clear filters") : null,
+      first: st.view === "grid" ? slice.slice(0, 4) : [], second: st.view === "grid" ? slice.slice(4, 8) : [], all: st.view === "list" ? slice : [],
+      showBlockA: st.view === "grid" && slice.length > 4 && page === 1, showBlockB: st.view === "grid" && slice.length >= 8 && page === 1,
+      alertTitle: st.alerted ? "We'll let you know." : "Hear about new cats first", alertLine: st.alerted ? "Saved. Change how often we email in your account settings." : "We'll email when a new cat matching these filters arrives. Usually within a week.",
+      alertLink: st.alerted ? "Email settings" : "Save this search",
+      alertHref: st.alerted ? "Account.dc.html" : "", saveSearch: st.alerted ? undefined : () => this.setState({ alerted: true }),
+      page, pages, hasPages: pages > 1, pageSummary: n ? "Showing " + ((page - 1) * per + 1) + "–" + Math.min(n, page * per) + " of " + n : "",
+    };
+  }
+}
+</script>
+</body>
+</html>

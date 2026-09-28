@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<style>html,body{margin:0;background:#F4EFE5;color:#1E1B17}@view-transition{navigation:auto}::view-transition-old(root),::view-transition-new(root){animation-duration:140ms;animation-timing-function:ease}@media (prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}}h1,h2,h3,h4,h1 em,h2 em,h3 em,.t-display-xl,.t-display-l,.t-display-m,.t-display-xl em,.t-display-l em,.t-display-m em,.t-h1,.t-h2,.t-h3,.c-block__t,.c-stat__n,.t-name,.t-name-l,.c-cat__name,.c-shelter__name{font-family:'Between 2','Bricolage Grotesque',var(--font-headline)!important;font-weight:800!important;font-style:normal!important}.t-name,.t-name-l,.c-cat__name,.c-shelter__name,.t-h3,h3{letter-spacing:-.035em!important}.t-name,.t-name-l,.c-cat__name{font-family:'Between 2','Bricolage Grotesque','Manrope',sans-serif!important;font-style:normal!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/fonts/Manrope-normal-var.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/fonts/DMSerifDisplay-normal.woff2" crossorigin>
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/colors.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/typography.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/base.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/components.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+<link rel="stylesheet" href="cate.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
+<script src="./support.js"></script>
+<script src="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/_ds_bundle.js"></script>
+<script src="cate-data.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="icon" type="image/png" href="assets/icon-cream.png">
+<link rel="apple-touch-icon" href="assets/icon-rust.png">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;display=swap">
+<link rel="stylesheet" href="cate.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&amp;display=swap">
+<style>.sm{grid-template-columns:minmax(0,3.5fr) minmax(0,4.6fr) minmax(0,4.2fr)}
+@media (max-width:1279px){.sm{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.sm-intro{grid-column:1/-1}}
+@media (max-width:767px){.sm{grid-template-columns:minmax(0,1fr)}.sm-fig{max-width:420px}.sm-note{left:0!important;padding:12px 18px 12px 14px!important;gap:10px!important;border-radius:18px!important}.sm-note svg:first-child,.sm-note>span:first-child svg{width:24px!important;height:24px!important}.sm-note>span:last-child{font-size:20px!important}.sm-card{border-radius:24px!important}}
+a{color:#16130F}a:hover{color:#B24A25}.st-feat{grid-template-columns:minmax(0,6fr) minmax(0,6fr)}.st-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:1280px;margin:0 auto;width:100%}.st-grid>:nth-child(2n){margin-top:96px}@media (max-width:1279px){.st-grid{grid-template-columns:1fr;max-width:680px}.st-grid>*{margin-top:0!important}}
+@media (max-width:1023px){.st-feat{grid-template-columns:1fr}.st-grid{grid-template-columns:1fr;max-width:640px}.st-grid>*{margin-top:0!important}}
+@media (max-width:639px){.st-card{grid-template-columns:1fr!important}.st-card>div:nth-of-type(3){grid-column:1!important;width:100%!important;aspect-ratio:4/3;transform:none!important}.st-card>div:last-child{grid-column:1!important;grid-row:2!important;margin:-40px 0 0!important}}</style>
+</helmet>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Navbar" signed-in="{{ true }}" hint-size="100%,72px"></x-import>
+<main class="container" style="padding-top:clamp(36px,5vw,72px);padding-bottom:var(--section-gap)">
+
+<section class="sm" data-screen-label="Story of the month" aria-roledescription="carousel" aria-label="Story of the month" style="display:grid;column-gap:clamp(28px,3vw,56px);row-gap:56px;align-items:center">
+<div class="sm-intro" style="display:grid;gap:clamp(22px,2vw,30px);align-content:center;min-width:0">
+<div style="display:flex;align-items:center;gap:18px"><span aria-hidden="true" style="width:52px;height:2px;background:#C8532C;border-radius:2px"></span><span style="font:700 13px/1 var(--font-sans);letter-spacing:.2em;text-transform:uppercase;color:#4A4239">Story of the month</span></div>
+<h1 style="margin:0;display:grid;font:800 clamp(64px,7vw,120px)/.86 'Between 2','Bricolage Grotesque',var(--font-headline);letter-spacing:-.055em;color:#16130F"><span>Home</span><span style="display:flex;align-items:flex-end;gap:.16em">now.<span style="width:.62em;margin-bottom:.12em;transform:rotate(8deg)"><svg aria-hidden="true" viewBox="0 0 48 44" style="display:block;width:100%;overflow:visible"><path d="M24 40C10 30 4 22 5 13c1-7 8-10 13-7 3 2 5 5 6 8 1-4 4-8 9-9 6-1 11 4 10 11-1 9-8 16-19 24z" fill="none" stroke="#C8532C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"></path></svg></span></span></h1>
+<p style="margin:0;max-width:17em;font:400 clamp(19px,1.5vw,24px)/1.4 var(--font-sans);color:#3A352E;text-wrap:pretty">Adopters write these a few weeks in. We don't edit them, except for spelling.</p>
+<div style="display:flex;gap:18px;margin-top:6px">
+<button type="button" aria-label="Previous story" onClick="{{ prev }}" style="width:64px;height:64px;border-radius:50%;border:1px solid #E2DACB;background:#F1ECE2;display:grid;place-items:center;color:#16130F;cursor:pointer;transition:background-color 240ms cubic-bezier(.2,.7,.2,1),border-color 240ms" style-hover="background:#E9E2D5;border-color:#CFC4B2"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="arrow-left" size="{{ 22 }}" stroke="{{ 1.75 }}" hint-size="22px,22px"></x-import></button>
+<button type="button" aria-label="Next story" onClick="{{ next }}" style="width:64px;height:64px;border-radius:50%;border:0;background:#B24A25;display:grid;place-items:center;color:#FBF8F2;cursor:pointer;box-shadow:0 12px 22px -12px rgba(178,74,37,.6);transition:background-color 240ms cubic-bezier(.2,.7,.2,1)" style-hover="background:#963C1C"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="arrow-right" size="{{ 22 }}" stroke="{{ 1.75 }}" hint-size="22px,22px"></x-import></button>
+</div>
+<div style="display:flex;gap:22px;align-items:center;margin-top:8px;position:relative">
+<sc-for list="{{ thumbs }}" as="t" hint-placeholder-count="3">
+<button type="button" aria-label="{{ t.label }}" aria-current="{{ t.cur }}" onClick="{{ t.go }}" style="position:relative;width:80px;height:80px;padding:0;border-radius:50%;border:0;background:#F4EFE5;cursor:pointer;box-shadow:{{ t.ring }};transition:box-shadow 240ms cubic-bezier(.2,.7,.2,1),transform 160ms" style-active="transform:scale(.96)"><span style="position:absolute;inset:{{ t.inset }};border-radius:50%;background:{{ t.bg }};transition:inset 240ms cubic-bezier(.2,.7,.2,1)"></span></button>
+</sc-for>
+<svg aria-hidden="true" viewBox="0 0 40 40" style="position:absolute;left:{{ sparkX }};top:-14px;width:26px;overflow:visible;transition:left 320ms cubic-bezier(.2,.7,.2,1)"><g fill="none" stroke="#C8532C" stroke-width="3" stroke-linecap="round"><path d="M6 22 L2 12"></path><path d="M16 16 L14 4"></path><path d="M26 18 L32 8"></path></g></svg>
+</div>
+<div style="display:flex;align-items:center;gap:36px;font:400 16px/1 var(--font-sans);color:#5E554B"><span style="font-weight:500;color:#3A352E;font-variant-numeric:tabular-nums" aria-live="polite">{{ counter }}</span><span style="display:inline-flex;align-items:center;gap:10px">Real stories. Real homes.<svg aria-hidden="true" viewBox="0 0 48 44" style="width:16px;display:block"><path d="M24 40C10 30 4 22 5 13c1-7 8-10 13-7 3 2 5 5 6 8 1-4 4-8 9-9 6-1 11 4 10 11-1 9-8 16-19 24z" fill="#C8532C"></path></svg></span></div>
+</div>
+
+<div class="sm-fig" style="position:relative;min-width:0;aspect-ratio:.86;max-width:560px;width:100%;justify-self:center;isolation:isolate">
+<svg aria-hidden="true" viewBox="0 0 500 580" preserveAspectRatio="xMidYMid meet" style="position:absolute;left:-6%;top:-1%;width:112%;height:104%;z-index:0;overflow:visible"><path d="M170 20C250-6 360 0 410 40C470 90 440 170 470 240C500 310 520 400 480 470C440 540 350 580 250 576C150 572 70 540 40 470C10 400 40 330 30 260C20 190 60 130 90 80C110 50 136 32 170 20Z" fill="#C9D2B8"></path></svg>
+<div ref="{{ photoRef }}" style="position:absolute;left:8%;right:4%;top:0;bottom:3%;z-index:1;transform:rotate(-3.5deg);border-radius:clamp(40px,4.4vw,72px) clamp(56px,6vw,96px) clamp(40px,4.4vw,72px) clamp(56px,6vw,96px);overflow:hidden;background:#DCD6C8;box-shadow:0 30px 60px -36px rgba(60,48,30,.4)"><div role="img" aria-label="{{ cur.alt }}" style="width:100%;height:100%;background:{{ cur.bgBig }}"></div></div>
+<svg aria-hidden="true" viewBox="0 0 80 80" style="position:absolute;right:-2%;top:-2%;width:64px;z-index:2;overflow:visible"><g stroke="#3F5A34" stroke-width="4" stroke-linecap="round" fill="none"><path d="M14 4 L8 52"></path><path d="M62 14 L28 60"></path></g></svg>
+<div aria-hidden="true" style="position:absolute;left:-3%;top:61%;width:58px;z-index:2;transform:rotate(-14deg)"><svg aria-hidden="true" viewBox="0 0 48 44" style="display:block;width:100%;overflow:visible"><path d="M24 40C10 30 4 22 5 13c1-7 8-10 13-7 3 2 5 5 6 8 1-4 4-8 9-9 6-1 11 4 10 11-1 9-8 16-19 24z" fill="none" stroke="#3F5A34" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"></path></svg></div>
+<div class="sm-note" style="position:absolute;left:-2%;bottom:6%;z-index:3;display:flex;align-items:center;gap:16px;padding:18px 26px 18px 22px;background:#FBF8F2;border-radius:22px;box-shadow:0 22px 40px -22px rgba(60,48,30,.35),0 1px 3px rgba(60,48,30,.08);transform:rotate(-6deg)">
+<span style="color:#16130F;display:grid"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="house" size="{{ 32 }}" stroke="{{ 1.6 }}" hint-size="32px,32px"></x-import></span>
+<span ref="{{ noteRef }}" style="font:500 24px/1.05 'Caveat',cursive;color:#16130F;max-width:8.2em">{{ cur.note }} <svg aria-hidden="true" viewBox="0 0 48 44" style="display:inline-block;width:16px;vertical-align:-1px"><path d="M24 40C10 30 4 22 5 13c1-7 8-10 13-7 3 2 5 5 6 8 1-4 4-8 9-9 6-1 11 4 10 11-1 9-8 16-19 24z" fill="#C8532C"></path></svg></span>
+</div>
+</div>
+
+<figure class="sm-card" style="margin:0;min-width:0;display:grid;gap:28px;padding:clamp(32px,3vw,48px) clamp(28px,2.6vw,44px);background:#FBF8F2;border-radius:32px;box-shadow:0 40px 80px -48px rgba(80,58,30,.28),0 0 0 1px rgba(80,58,30,.04)">
+<svg aria-hidden="true" viewBox="0 0 64 48" style="display:block;width:52px;height:40px"><path fill="#B24A25" d="M4 46V30C4 14 11 5 26 1l3 7c-8 3-12 8-12 16h11v22zM36 46V30c0-16 7-25 22-29l3 7c-8 3-12 8-12 16h11v22z"></path></svg>
+<div ref="{{ quoteRef }}" style="display:grid;gap:28px">
+<blockquote style="margin:0;font:400 clamp(22px,1.9vw,30px)/1.4 var(--font-sans);letter-spacing:-.015em;color:#16130F;text-wrap:pretty">{{ cur.q }}</blockquote>
+<figcaption style="display:flex;align-items:center;gap:22px">
+<span aria-hidden="true" style="flex:none;width:88px;height:88px;border-radius:50%;background:{{ cur.bg }};box-shadow:0 0 0 4px #F1ECE2"></span>
+<span style="display:grid;gap:6px;min-width:0"><span style="font:700 19px/1.2 var(--font-sans);color:#16130F">{{ cur.by }},</span><span style="font:400 19px/1.25 var(--font-sans);color:#6F665B">{{ cur.adopted }}</span><span style="font:400 15px/1.35 var(--font-sans);color:#7A7064">{{ cur.meta }}</span></span>
+</figcaption>
+</div>
+<div style="border-top:1px solid #E6DED1;padding-top:28px">
+<a href="{{ cur.href }}" style="display:inline-flex;align-items:center;gap:16px;height:64px;padding:0 30px 0 32px;border-radius:999px;background:#B24A25;color:#FBF8F2;text-decoration:none;font:700 18px/1 var(--font-sans);letter-spacing:-.01em;box-shadow:0 14px 26px -14px rgba(178,74,37,.6);transition:background-color 240ms cubic-bezier(.2,.7,.2,1)" style-hover="background:#963C1C;color:#FBF8F2">{{ cur.cta }}<x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="arrow-right" size="{{ 20 }}" stroke="{{ 1.75 }}" hint-size="20px,20px"></x-import></a>
+</div>
+</figure>
+</section>
+
+<section data-screen-label="All stories" style="margin-top:var(--section-gap);display:grid;gap:clamp(32px,3vw,48px)">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: baseline; gap: 24px">
+
+
+<h2 style="margin:0;font:800 clamp(40px,4.6vw,76px)/.96 'Between 2','Bricolage Grotesque',var(--font-headline);letter-spacing:-.05em;color:#16130F">More from home</h2></div>
+<div class="st-grid" style="display:grid;column-gap:clamp(32px,4vw,64px);row-gap:clamp(64px,7vw,112px)">
+<sc-for list="{{ list }}" as="s" hint-placeholder-count="4">
+<article class="st-card" style="position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,40fr) minmax(0,60fr);align-items:center;padding:7% 0 5%">
+<div aria-hidden="true" style="position:absolute;left:-2%;bottom:0;width:44%;height:26%;border-radius:40% 60% 50% 50% / 50% 40% 60% 50%;background:#E3E5D6;z-index:-1"></div>
+<div aria-hidden="true" style="position:absolute;left:44%;top:1%;width:30%;height:16%;border-radius:50% 50% 40% 60% / 60% 60% 40% 40%;background:#E3E5D6;z-index:-1"></div>
+<div style="grid-column:1 / span 2;grid-row:1;width:54%;height:86%;align-self:center;border-radius:14% 30% 22% 18% / 10% 14% 20% 16%;overflow:hidden;background:#DCD6C8;transform:rotate(-2deg)"><div role="img" aria-label="{{ s.alt }}" style="width:100%;height:100%;background-image:{{ s.bg }};background-size:cover;background-position:center"></div></div>
+<svg aria-hidden="true" viewBox="0 0 90 90" style="position:absolute;left:1%;top:14%;width:8%"><g fill="none" stroke="#C4643A" stroke-width="5" stroke-linecap="round"><path d="M60 6 L68 40"></path><path d="M20 32 L46 52"></path><path d="M6 78 L40 76"></path></g></svg>
+<span aria-hidden="true" style="position:absolute;left:12%;bottom:4%;width:6%;transform:rotate(-10deg)"><svg viewBox="0 0 48 44" style="width:100%;display:block"><path d="M24 40C10 30 4 22 5 13c1-7 8-10 13-7 3 2 5 5 6 8 1-4 4-8 9-9 6-1 11 4 10 11-1 9-8 16-19 24z" fill="none" stroke="#C4643A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"></path></svg></span>
+<div style="grid-column:2;grid-row:1;position:relative;margin:6% 0 0 0;padding:32px 28px 20px;background:#FBF8F2;border-radius:40px 32px 32px 32px;box-shadow:0 24px 48px -28px rgba(42,38,34,.28);display:grid;gap:18px">
+<div style="display:grid;gap:8px"><div role="heading" aria-level="3" style="margin:0;font:800 clamp(40px,3.4vw,56px)/.92 'Between 2','Bricolage Grotesque',var(--font-headline);letter-spacing:-.05em;color:#16130F">{{ s.cat }}</div>
+<span style="display:flex;align-items:center;gap:16px;font:400 18px/1 var(--font-sans);color:#6F5E57">{{ s.age }}<span style="width:48px;height:1px;background:#BDB3A4"></span></span></div>
+<p style="margin:0;font:400 15px/1.6 var(--font-sans);color:#3A352E;text-wrap:pretty">{{ s.found }}</p>
+<div style="position:relative;padding-top:20px">
+<span aria-hidden="true" style="position:absolute;left:0;top:-4px;font:700 52px/1 var(--font-sans);color:#C4643A">“</span>
+<blockquote style="margin:0;padding:24px 20px 22px 22px;background:#F2ECE1;border-radius:24px 18px 24px 18px;font:400 clamp(18px,1.35vw,21px)/1.28 var(--font-sans);color:#16130F;letter-spacing:-.01em;text-wrap:pretty">“{{ s.q }}”</blockquote>
+<svg aria-hidden="true" viewBox="0 0 100 20" style="position:absolute;right:16px;bottom:-10px;width:88px"><g fill="none" stroke="#C4643A" stroke-width="3" stroke-linecap="round"><path d="M4 12C34 6 66 4 96 6"></path><path d="M30 18C54 14 76 13 90 14"></path></g></svg>
+</div>
+<div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:center;padding:16px 18px;background:#E3E5D6;border-radius:18px">
+<span aria-hidden="true" style="display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#CDD1BE;color:#2A2622"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></span>
+<div style="display:grid;gap:8px"><span style="font:700 12px/1 var(--font-sans);letter-spacing:.2em;text-transform:uppercase;color:#4F5744">Did you know</span><p style="margin:0;font:400 14.5px/1.5 var(--font-sans);color:#2E2A25;text-wrap:pretty">{{ s.fact }}</p></div>
+</div>
+<div style="display:flex;align-items:center;gap:12px;padding-top:16px;border-top:1px solid #E6DECF">
+<span aria-hidden="true" style="flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#EFE6DA;color:#5E584D"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="user" size="{{ 18 }}" hint-size="18px,18px"></x-import></span>
+<span style="flex:1;min-width:0;font:400 13.5px/1.4 var(--font-sans);color:#5E584D">{{ s.by }} · {{ s.shelter }} · {{ s.when }}</span>
+<a href="{{ s.href }}" aria-label="Visit {{ s.shelter }}" style="flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1px solid #E0CDB8;color:#16130F" style-hover="border-color:#B24A25;color:#B24A25"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="arrow-right" size="{{ 18 }}" stroke="{{ 1.75 }}" hint-size="18px,18px"></x-import></a>
+</div>
+</div>
+</article>
+</sc-for>
+</div>
+</section>
+
+<section data-screen-label="Share your story" style="margin-top:var(--section-gap);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:32px;padding:clamp(36px,5vw,72px);background:#E3E5D6;border-radius:20px">
+<div style="display:grid;gap:14px;max-width:34em">
+<h2 style="margin:0;font:800 clamp(36px,3.8vw,60px)/.96 'Between 2','Bricolage Grotesque',var(--font-headline);letter-spacing:-.05em;color:#16130F">Adopted through CATÉ?</h2>
+<p style="margin:0;font:400 clamp(19px,1.5vw,24px)/1.35 var(--font-sans);color:#2E2A25">Send us a photo and a few lines. The shelter gets a copy, and it usually makes their week.</p>
+</div>
+<a href="Account.dc.html" style="display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 26px;border-radius:999px;background:#B24A25;color:#FFFFFF;font:600 16px/1 var(--font-sans);text-decoration:none" style-hover="background:#963C1C;color:#FFFFFF">Share your story<x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="arrow-right" size="{{ 18 }}" stroke="{{ 1.75 }}" hint-size="18px,18px"></x-import></a>
+</section>
+</main>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Footer" hint-size="100%,360px"></x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { f: "all", i: 0 };
+  photoRef = React.createRef(); quoteRef = React.createRef(); noteRef = React.createRef();
+  componentDidUpdate() {
+    const i = this.state.i;
+    if (this._pi === undefined) { this._pi = i; return; }
+    if (this._pi === i) return;
+    this._pi = i;
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const E = "cubic-bezier(.2,.7,.2,1)", d = this.dir || 1;
+    const img = this.photoRef.current && this.photoRef.current.firstElementChild;
+    if (img) img.animate([{ opacity: 0, transform: "scale(1.04)" }, { opacity: 1, transform: "none" }], { duration: 560, easing: E });
+    if (this.quoteRef.current) this.quoteRef.current.animate([{ opacity: 0, transform: "translateX(" + 16 * d + "px)" }, { opacity: 1, transform: "none" }], { duration: 480, easing: E });
+    if (this.noteRef.current) this.noteRef.current.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 480, delay: 120, easing: E, fill: "backwards" });
+  }
+  componentDidMount() { this._pi = this.state.i; if (!window.CATDesignSystem_3eda1e) this.t = setInterval(() => { if (window.CATDesignSystem_3eda1e) { clearInterval(this.t); this.forceUpdate(); } }, 40); }
+  componentWillUnmount() { clearInterval(this.t); }
+  renderVals() {
+    const P = (n) => "photos/" + n + ".jpg";
+    const S = [
+      { cat: "Otto", age: "4 years", tag: "first", photo: P("ginger-lounge"), found: "Rode into Kyiv under the bonnet of a delivery van from Zhytomyr. A mechanic on Podil heard meowing during an oil change.", fact: "Still sleeps with one paw over his eyes, like he's hiding from headlights.", q: "He hid behind the washing machine for two days. On the third he was asleep on my laptop, and he's been there since.", by: "Iryna & Taras", shelter: "Podil Street Rescue", when: "Feb 2026" },
+      { cat: "Sonia", age: "9 years", tag: "medical", photo: P("white-cat"), found: "Waited three days on the steps of the clinic downstairs, as if she knew. She was diagnosed with diabetes that afternoon.", fact: "Knows the sound of the insulin pen and comes running — it means breakfast.", q: "Insulin twice a day, with breakfast and dinner. It took a week to learn. She purrs through it.", by: "Dmytro", shelter: "Darnytsia Cat Room", when: "Mar 2026" },
+      { cat: "Bublyk & Mak", age: "4 months", tag: "kitten", photo: P("kitten-walk"), found: "Found in a shoebox of winter hats at a flea market on Petrivka. The seller swore he'd never seen them before.", fact: "Kittens sleep up to 20 hours a day. These two spend the other four on the curtains.", q: "Two kittens was the best and worst decision of the year. Mostly the best.", by: "The Kovalenkos", shelter: "Obolon Feline Aid", when: "Apr 2026" },
+      { cat: "Kavun", age: "7 years", tag: "senior", photo: P("ginger-sleep"), found: "Lived for two years in the old bakery before it became a shelter. He was, technically, the first resident.", fact: "Ginger cats are about 80% male. Kavun takes this responsibility seriously.", q: "We came for a kitten and left with the grumpy ginger in the corner. He's not grumpy.", by: "Anna", shelter: "Bucha Cat Bakery", when: "Dec 2025" },
+      { cat: "Dymka", age: "3 years", tag: "first", photo: P("grey-shorthair"), found: "Walked into a volunteer's kitchen during a feeding round, ate the neighbour's cutlet and refused to leave.", fact: "Street cats often greet you by slow-blinking. Dymka does it from across the room.", q: "She still sits by the door at dusk, like she did on the street. Then she comes back to the sofa.", by: "Yulia", shelter: "Brovary Street Cats", when: "May 2026" },
+      { cat: "Pirat", age: "5 years", tag: "medical", photo: P("tabby-stairs"), found: "Lost a back leg to a car on the Kharkivske highway. A bus driver stopped, wrapped him in a scarf and drove him to the clinic.", fact: "Three-legged cats adapt within weeks. Pirat can still reach the top of the wardrobe.", q: "Three legs, no problem with the stairs. Some problem with the curtains.", by: "Serhii & Lesia", shelter: "Darnytsia Cat Room", when: "Jun 2026" },
+      { cat: "Bohdana", age: "13 years", tag: "senior", photo: P("colorpoint"), found: "Came in with a handwritten note from her owner, who was moving into care: \"She likes the radio on. Not too loud.\"", fact: "Cats can hear up to 64 kHz — so Bohdana has a point about the volume.", q: "The shelter said she might have a year or two. That was three birthdays ago.", by: "Marta", shelter: "Irpin Senior Cats", when: "Jul 2023" },
+      { cat: "Zefir", age: "5 months", tag: "kitten", photo: P("kitten-tabby"), found: "Found asleep in a flowerpot on a fifth-floor balcony. No one in the building knows how he got up there.", fact: "Kittens are born with blue eyes. Zefir's turned green the week he came home.", q: "My daughter wrote the application with me. She now reads to him every night.", by: "Oksana & Sofiia", shelter: "Podil Street Rescue", when: "Aug 2026" },
+    ];
+    const F = [
+      { photo: P("blanket-tabby"), pos: "50% 50%", alt: "Mila, an eleven-year-old tabby, peeking out from under a blanket", q: "“Everyone told me to get a kitten. Mila sleeps twenty hours a day, and I’ve never been this calm.”", by: "Olena", adopted: "adopted Mila, 11", meta: "Irpin Senior Cats · January 2026", note: "Safe, warm and finally home", cta: "Meet cats over seven", href: "Browse.dc.html?age=senior", name: "Mila" },
+      { photo: P("ginger-lounge"), pos: "58% 50%", alt: "Ryzhyk, a ginger cat, lounging on the sofa", q: "“We wanted a quiet cat. He isn’t. The flat has never felt less empty.”", by: "Andrii", adopted: "adopted Ryzhyk, 6", meta: "Obolon Feline Aid · March 2026", note: "Loud, orange and ours", cta: "Meet adult cats", href: "Browse.dc.html?age=adult", name: "Ryzhyk" },
+      { photo: P("bicolor"), pos: "50% 35%", alt: "Mira, a black and white cat, sitting on a lap", q: "“She chose my lap on the first visit. I signed the papers on the second.”", by: "Kateryna", adopted: "adopted Mira, 4", meta: "Podil Street Rescue · May 2026", note: "Chose her person first", cta: "Meet lap cats", href: "Browse.dc.html", name: "Mira" },
+    ];
+    const i = this.state.i, n = F.length;
+    const go = (k, d) => { this.dir = d; this.setState({ i: (k + n) % n }); };
+    const cur = { ...F[i], bgBig: "url(" + F[i].photo + ") " + F[i].pos + "/cover no-repeat,#DCD6C8", bg: "url(" + F[i].photo + ") " + F[i].pos + "/cover,#E8E0D2" };
+    const SL = {"Podil Street Rescue":"podil","Bucha Cat Bakery":"bucha","Darnytsia Cat Room":"darnytsia","Irpin Senior Cats":"irpin","Obolon Feline Aid":"obolon","Brovary Street Cats":"brovary"};
+    const KEEP = ["Otto","Kavun","Pirat","Bohdana","Dymka","Zefir"];
+    return {
+      cur, counter: (i + 1) + " / " + n,
+      prev: () => go(i - 1, -1), next: () => go(i + 1, 1),
+      sparkX: (i * 102 - 12) + "px",
+      thumbs: F.map((f, k) => ({ label: "Story " + (k + 1) + ": " + f.name, cur: k === i ? "true" : undefined, go: () => go(k, k < i ? -1 : 1), bg: "url(" + f.photo + ") " + f.pos + "/cover,#E8E0D2", inset: k === i ? "6px" : "0px", ring: k === i ? "0 0 0 2px #C8532C" : "0 0 0 1px #E6DED1" })),
+      photoRef: this.photoRef, quoteRef: this.quoteRef, noteRef: this.noteRef,
+      list: KEEP.map((n) => S.find((s) => s.cat === n)).filter(Boolean).map((s) => ({ ...s, alt: s.cat + ", at home", bg: "url(" + s.photo + ")", href: "Shelter.dc.html?id=" + (SL[s.shelter] || "podil") })),
+    };
+  }
+}
+</script>
+</body>
+</html>

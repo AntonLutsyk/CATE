@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<style>body{margin:0;background:#E7E0D3}a{color:#1E1B17}a:hover{color:#B24A25}</style>
+</helmet>
+<div style="padding:48px;display:grid;gap:24px;font-family:Manrope,system-ui,sans-serif">
+<div style="display:grid;gap:6px"><h1 style="margin:0;font:800 36px/1 'Bricolage Grotesque',Manrope,sans-serif;letter-spacing:-.03em;color:#1E1B17">CATÉ — mobile, 390 × 844</h1><p style="margin:0;font:500 15px/1.4 Manrope,sans-serif;color:#5E584D">Each phone is a live page — scroll and tap inside it.</p></div>
+<div style="display:flex;flex-wrap:wrap;gap:40px 32px;align-items:flex-start">
+<sc-for list="{{ pages }}" as="p" hint-placeholder-count="12">
+<div style="display:grid;gap:12px;justify-items:start">
+<div style="display:flex;align-items:center;gap:10px"><span style="font:700 12px/1 Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#B24A25">{{ p.n }}</span><span style="font:700 16px/1 Manrope,sans-serif;color:#1E1B17">{{ p.label }}</span><a href="{{ p.src }}" target="_blank" style="font:600 13px/1 Manrope,sans-serif">Open ↗</a></div>
+<div style="box-sizing:content-box;width:390px;height:844px;border-radius:44px;padding:10px;background:#1E1B17;box-shadow:0 30px 60px -30px rgba(30,27,23,.45)">
+<div style="width:390px;height:844px;border-radius:34px;overflow:hidden;background:#F4EFE5">
+<iframe src="{{ p.src }}" title="{{ p.label }}" loading="lazy" style="width:405px;height:844px;border:0;display:block;background:#F4EFE5"></iframe>
+</div>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const L = [["Home", "Home.dc.html"], ["Adopt", "Browse.dc.html"], ["Cat profile", "Profile.dc.html?id=0142"], ["Shelters", "Shelters.dc.html"], ["Shelter", "Shelter.dc.html?id=podil"], ["How adoption works", "HowItWorks.dc.html"], ["Stories", "Stories.dc.html"], ["Saved cats", "Favorites.dc.html"], ["Application", "Apply.dc.html?id=0142"], ["Status", "Status.dc.html"], ["Account", "Account.dc.html"], ["Legal", "Legal.dc.html"]];
+    return { pages: L.map(([label, src], i) => ({ label, src, n: String(i + 1).padStart(2, "0") })) };
+  }
+}
+</script>
+</body>
+</html>

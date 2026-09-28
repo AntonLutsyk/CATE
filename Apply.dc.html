@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<style>html,body{margin:0;background:#F4EFE5;color:#1E1B17}@view-transition{navigation:auto}::view-transition-old(root),::view-transition-new(root){animation-duration:140ms;animation-timing-function:ease}@media (prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}}h1,h2,h3,h4,h1 em,h2 em,h3 em,.t-display-xl,.t-display-l,.t-display-m,.t-display-xl em,.t-display-l em,.t-display-m em,.t-h1,.t-h2,.t-h3,.c-block__t,.c-stat__n,.t-name,.t-name-l,.c-cat__name,.c-shelter__name{font-family:'Between 2','Bricolage Grotesque',var(--font-headline)!important;font-weight:800!important;font-style:normal!important}.t-name,.t-name-l,.c-cat__name,.c-shelter__name,.t-h3,h3{letter-spacing:-.035em!important}.t-name,.t-name-l,.c-cat__name{font-family:'Between 2','Bricolage Grotesque','Manrope',sans-serif!important;font-style:normal!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/fonts/Manrope-normal-var.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/fonts/DMSerifDisplay-normal.woff2" crossorigin>
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/colors.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/typography.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/base.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/components.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+<link rel="stylesheet" href="cate.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
+<script src="./support.js"></script>
+<script src="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/_ds_bundle.js"></script>
+<script src="cate-data.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+
+<link rel="icon" type="image/png" href="assets/icon-cream.png">
+<link rel="apple-touch-icon" href="assets/icon-rust.png">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+<link rel="stylesheet" href="cate.css">
+<style>
+.a-fld:has([aria-invalid="true"]){border-color:#A3321F!important}.a-fld:focus-within{border-color:#B24A25!important;box-shadow:0 0 0 3px #F4DDD3!important}
+
+.a-main{grid-template-columns:minmax(0,7fr) minmax(0,1fr) minmax(0,4fr)}
+.a-two{grid-template-columns:1fr 1fr}
+.a-three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.a-done{grid-template-columns:minmax(0,5fr) minmax(0,1fr) minmax(0,6fr)}
+@media (max-width:1023px){.a-main,.a-done{grid-template-columns:1fr}.a-main>:nth-child(2),.a-done>:nth-child(2){display:none}.a-aside{position:relative!important;top:auto!important;order:-1;padding:20px!important;max-width:none!important;justify-self:stretch!important}.a-aside-full,.a-aside-deco{display:none!important}.a-done .c-frame{max-width:340px;width:100%}}
+@media (max-width:639px){.a-two,.a-three{grid-template-columns:1fr}.a-exit-l{display:none}}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{padding:0}
+@media (max-width:639px){.ap-actions{position:sticky;bottom:0;z-index:20;margin-inline:calc(var(--grid-margin)*-1);padding:12px var(--grid-margin) calc(12px + env(safe-area-inset-bottom))!important;background:rgba(244,239,229,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);max-width:none!important}.ap-actions .c-btn:last-child{flex:1}}
+</style>
+</helmet>
+<header style="border-bottom:1px solid var(--border);background:var(--bg)">
+<div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Wordmark" href="Home.dc.html" size="{{ 25 }}" hint-size="84px,30px"></x-import>
+<span class="t-caption a-exit-l">Application for {{ k.name }} · {{ k.shelter }}</span>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.TextLink" variant="quiet" href="{{ k.profile }}" hint-size="auto,24px">Save and exit</x-import>
+</div>
+</header>
+
+<sc-if value="{{ inForm }}" hint-placeholder-val="{{ true }}">
+<main class="container" data-screen-label="Application form" style="padding-top:clamp(32px,4vw,56px);padding-bottom:var(--section-gap)">
+<div class="a-main" style="display:grid;column-gap:var(--grid-gutter);row-gap:32px;align-items:start">
+<div style="display:grid;gap:40px;min-width:0">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.StepProgress" steps="{{ steps }}" current="{{ step }}" hint-size="100%,56px"></x-import>
+<div style="display:grid;gap:12px;max-width:620px">
+<h1 class="t-h1">{{ title }}</h1>
+<p class="t-body-l t-secondary" style="margin:0;display:flex;align-items:center;gap:16px;flex-wrap:wrap">{{ why }}<sc-if value="{{ s1 }}" hint-placeholder-val="{{ true }}"><svg aria-hidden="true" viewBox="0 0 48 44" style="width:26px;flex:none;transform:rotate(8deg) translateY(-6px)"><path d="M24 40C10 30 4 22 5 13c1-7 8-10 13-7 3 2 5 5 6 8 1-4 4-8 9-9 6-1 11 4 10 11-1 9-8 16-19 24z" fill="none" stroke="#C4643A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"></path></svg></sc-if></p>
+</div>
+
+<sc-if value="{{ s1 }}" hint-placeholder-val="{{ true }}">
+<form style="display:grid;gap:24px;max-width:620px" onSubmit="{{ prevent }}">
+<div class="a-two" style="display:grid;gap:20px">
+<label for="fn" style="display:grid;gap:6px;padding:12px 16px 12px;background:#FBF8F2;border:1px solid #E6DECF;border-radius:14px;box-shadow:0 1px 2px rgba(42,38,34,.04);transition:border-color 200ms,box-shadow 200ms;cursor:text" class="a-fld">
+<span style="font:500 13px/1 var(--font-sans);color:#3A352E">First name</span>
+<span style="display:flex;align-items:center;gap:12px"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex:none;color:#8A7B6A"><circle cx="12" cy="8" r="4"></circle><path d="M5 21a7 7 0 0 1 14 0"></path></svg><input id="fn" type="text" required aria-invalid="{{ errFnB }}" aria-describedby="fn-err" value="{{ f.fn }}" onChange="{{ f.set_fn }}" autocomplete="given-name" style="flex:1;min-width:0;border:0;outline:0;background:transparent;padding:0;font:500 16px/1.4 var(--font-sans);color:#16130F"></span>
+</label>
+<label for="ln" style="display:grid;gap:6px;padding:12px 16px 12px;background:#FBF8F2;border:1px solid #E6DECF;border-radius:14px;box-shadow:0 1px 2px rgba(42,38,34,.04);transition:border-color 200ms,box-shadow 200ms;cursor:text" class="a-fld">
+<span style="font:500 13px/1 var(--font-sans);color:#3A352E">Last name</span>
+<span style="display:flex;align-items:center;gap:12px"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex:none;color:#8A7B6A"><circle cx="12" cy="8" r="4"></circle><path d="M5 21a7 7 0 0 1 14 0"></path></svg><input id="ln" type="text" value="{{ f.ln }}" onChange="{{ f.set_ln }}" autocomplete="family-name" style="flex:1;min-width:0;border:0;outline:0;background:transparent;padding:0;font:500 16px/1.4 var(--font-sans);color:#16130F"></span>
+</label>
+</div>
+<sc-if value="{{ errFn }}" hint-placeholder-val="{{ false }}"><span id="fn-err" role="alert" style="margin-top:-12px;padding:0 4px;font:500 13px/1.4 var(--font-sans);color:#A3321F">{{ errFn }}</span></sc-if>
+<div style="display:grid;gap:10px">
+<label for="em" style="display:grid;gap:6px;padding:12px 16px 12px;background:#FBF8F2;border:1px solid #E6DECF;border-radius:14px;box-shadow:0 1px 2px rgba(42,38,34,.04);transition:border-color 200ms,box-shadow 200ms;cursor:text" class="a-fld">
+<span style="font:500 13px/1 var(--font-sans);color:#3A352E">Email</span>
+<span style="display:flex;align-items:center;gap:12px"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex:none;color:#8A7B6A"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg><input id="em" type="email" required aria-invalid="{{ errEmB }}" aria-describedby="em-err" value="{{ f.em }}" onChange="{{ f.set_em }}" autocomplete="email" style="flex:1;min-width:0;border:0;outline:0;background:transparent;padding:0;font:500 16px/1.4 var(--font-sans);color:#16130F"></span>
+</label>
+<sc-if value="{{ errEm }}" hint-placeholder-val="{{ false }}"><span id="em-err" role="alert" style="padding:0 4px;font:500 13px/1.4 var(--font-sans);color:#A3321F">{{ errEm }}</span></sc-if><sc-if value="{{ noErrEm }}" hint-placeholder-val="{{ true }}"><span style="padding:0 4px;font:400 13px/1.4 var(--font-sans);color:#6F665B">The shelter replies here. We never share it for anything else.</span></sc-if>
+</div>
+<div class="a-two" style="display:grid;gap:20px">
+<div style="display:grid;gap:10px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:0 4px"><label for="ph" style="font:500 13px/1 var(--font-sans);color:#3A352E">Phone</label><span style="font:400 13px/1 var(--font-sans);color:#8A8074">Optional</span></div>
+<label for="ph" style="display:flex;align-items:center;gap:12px;height:52px;padding:0 16px;background:#FBF8F2;border:1px solid #E6DECF;border-radius:14px;box-shadow:0 1px 2px rgba(42,38,34,.04);transition:border-color 200ms,box-shadow 200ms;cursor:text" class="a-fld"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex:none;color:#8A7B6A"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg><input id="ph" type="tel" value="{{ f.ph }}" onChange="{{ f.set_ph }}" autocomplete="tel" style="flex:1;min-width:0;border:0;outline:0;background:transparent;padding:0;font:500 16px/1.4 var(--font-sans);color:#16130F"></label>
+</div>
+<div style="display:grid;gap:10px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:0 4px"><label for="city" style="font:500 13px/1 var(--font-sans);color:#3A352E">Where do you live?</label></div>
+<label for="city" style="position:relative;display:flex;align-items:center;gap:12px;height:52px;padding:0 16px;background:#FBF8F2;border:1px solid #E6DECF;border-radius:14px;box-shadow:0 1px 2px rgba(42,38,34,.04);transition:border-color 200ms,box-shadow 200ms;cursor:pointer" class="a-fld"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex:none;color:#8A7B6A"><path d="M20 10c0 5-5.5 10.2-7.4 11.8a1 1 0 0 1-1.2 0C9.5 20.2 4 15 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><select id="city" value="{{ city }}" onChange="{{ setCityNative }}" style="flex:1;min-width:0;border:0;outline:0;background:transparent;padding:0;font:500 16px/1.4 var(--font-sans);color:#16130F;appearance:none;-webkit-appearance:none;cursor:pointer;padding-right:28px"><sc-for list="{{ cities }}" as="o" hint-placeholder-count="4"><option value="{{ o.value }}">{{ o.label }}</option></sc-for></select><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#3A352E" stroke-width="1.75" stroke-linecap="round" style="position:absolute;right:16px;pointer-events:none"><path d="m6 9 6 6 6-6"></path></svg></label>
+</div>
+</div>
+<div style="padding-top:4px"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Checkbox" label="I'm 18 or older" description="Shelters in Ukraine can only place cats with adults." default-checked="{{ true }}" hint-size="100%,48px"></x-import></div>
+</form>
+</sc-if>
+
+<sc-if value="{{ s2 }}" hint-placeholder-val="{{ false }}">
+<form style="display:grid;gap:36px;max-width:620px" onSubmit="{{ prevent }}">
+<fieldset style="display:grid;gap:12px"><legend class="t-label" style="margin-bottom:12px">What kind of home?</legend>
+<div class="a-three" style="display:grid;gap:12px">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Radio" card="{{ true }}" name="home" label="Apartment" default-checked="{{ true }}" hint-size="100%,56px"></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Radio" card="{{ true }}" name="home" label="House" hint-size="100%,56px"></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Radio" card="{{ true }}" name="home" label="Something else" hint-size="100%,56px"></x-import>
+</div></fieldset>
+<fieldset style="display:grid;gap:12px"><legend class="t-label" style="margin-bottom:12px">Do you rent or own?</legend>
+<div style="display:flex;gap:28px;flex-wrap:wrap">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Radio" name="rent" label="I rent" checked="{{ rents }}" on-change="{{ setRent }}" hint-size="auto,28px"></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Radio" name="rent" label="I own" checked="{{ owns }}" on-change="{{ setOwn }}" hint-size="auto,28px"></x-import>
+</div>
+<sc-if value="{{ rents }}" hint-placeholder-val="{{ true }}">
+<div style="margin-top:8px"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Checkbox" label="My landlord allows cats" description="The shelter may ask for a message or clause from your lease. That's normal." default-checked="{{ true }}" hint-size="100%,56px"></x-import></div>
+</sc-if>
+</fieldset>
+<div class="a-two" style="display:grid;gap:20px">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Field" label="Adults at home" html-for="ad" hint-size="100%,76px"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Input" id="ad" type="number" default-value="2" hint-size="100%,48px"></x-import></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Field" label="Children, and their ages" html-for="ch" optional="{{ true }}" hint-size="100%,76px"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Input" id="ch" default-value="One, aged 9" hint-size="100%,48px"></x-import></x-import>
+</div>
+<fieldset style="display:grid;gap:12px"><legend class="t-label" style="margin-bottom:12px">Outdoor access</legend>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Radio" name="out" label="Indoors only" hint-size="100%,28px"></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Radio" name="out" label="A balcony with netting" description="Most Kyiv shelters ask for secured balconies and windows." default-checked="{{ true }}" hint-size="100%,48px"></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Radio" name="out" label="A garden or yard" hint-size="100%,28px"></x-import>
+</fieldset>
+</form>
+</sc-if>
+
+<sc-if value="{{ s3 }}" hint-placeholder-val="{{ false }}">
+<form style="display:grid;gap:36px;max-width:620px" onSubmit="{{ prevent }}">
+<fieldset style="display:grid;gap:12px"><legend class="t-label" style="margin-bottom:12px">Have you lived with a cat before?</legend>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Radio" card="{{ true }}" name="exp" label="Yes, as an adult" description="You were the one feeding, cleaning and taking them to the vet." default-checked="{{ true }}" hint-size="100%,72px"></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Radio" card="{{ true }}" name="exp" label="Growing up, in a family home" hint-size="100%,56px"></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Radio" card="{{ true }}" name="exp" label="This would be my first cat" description="Completely fine. {{ k.first }} will send you a first-week guide." hint-size="100%,72px"></x-import>
+</fieldset>
+<fieldset style="display:grid;gap:12px"><legend class="t-label" style="margin-bottom:12px">Who else lives with you now?</legend>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Checkbox" label="Another cat" hint-size="100%,28px"></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Checkbox" label="A dog" hint-size="100%,28px"></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Checkbox" label="Small animals or birds" hint-size="100%,28px"></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Checkbox" label="No other pets" default-checked="{{ true }}" hint-size="100%,28px"></x-import>
+</fieldset>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Field" label="Tell us about a pet you've lived with" html-for="story" optional="{{ true }}" hint="A few sentences is plenty. What were they like, and how did you care for them?" hint-size="100%,200px"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Textarea" id="story" max-length="{{ 600 }}" show-count="{{ true }}" default-value="Bublyk lived with us for fourteen years. He was a grey tabby who slept on the radiator and yelled for breakfast at six. I took him to the same vet in Obolon his whole life." hint-size="100%,140px"></x-import></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Field" label="Your vet, if you have one" html-for="vet" optional="{{ true }}" hint-size="100%,76px"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Input" id="vet" default-value="VetCity, Obolon" hint-size="100%,48px"></x-import></x-import>
+</form>
+</sc-if>
+
+<sc-if value="{{ s4 }}" hint-placeholder-val="{{ false }}">
+<form style="display:grid;gap:36px;max-width:620px" onSubmit="{{ prevent }}">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Field" label="Why {{ k.name }}?" html-for="why" hint="{{ k.first }} reads this first. Be honest — there's no right answer." hint-size="100%,200px"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Textarea" id="why" max-length="{{ 600 }}" show-count="{{ true }}" default-value="We work from home most days and have a sunny window over the courtyard. My daughter is quiet and has been asking for a lap cat, not a kitten." hint-size="100%,140px"></x-import></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Field" label="How long would {{ k.she }} be alone on a normal day?" html-for="alone" hint-size="100%,76px"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Select" id="alone" value="{{ alone }}" on-change="{{ setAlone }}" options="{{ aloneOptions }}" hint-size="100%,48px"></x-import></x-import>
+<fieldset style="display:grid;gap:14px"><legend class="t-label" style="margin-bottom:6px">A few things to be sure about</legend>
+<p class="t-caption" style="margin:0 0 6px">Every CATÉ shelter asks these. Tick what feels true.</p>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Checkbox" label="She may hide for the first few days, and that's fine" default-checked="{{ true }}" hint-size="100%,28px"></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Checkbox" label="I'll keep {{ k.him }} indoors or on a secured balcony" default-checked="{{ true }}" hint-size="100%,28px"></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Checkbox" label="I can cover vet costs of around $100 a year" default-checked="{{ true }}" hint-size="100%,28px"></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Checkbox" label="If it doesn't work out, I'll bring {{ k.him }} back to {{ k.short }}" description="Never rehome {{ k.him }} yourself. The shelter will always take her back." hint-size="100%,48px"></x-import>
+</fieldset>
+</form>
+</sc-if>
+
+<sc-if value="{{ s5 }}" hint-placeholder-val="{{ false }}">
+<div style="display:grid;gap:0;max-width:620px;border-top:1px solid var(--border)">
+<sc-for list="{{ review }}" as="r" hint-placeholder-count="4">
+<section style="display:grid;gap:18px;padding:28px 0;border-bottom:1px solid var(--border)">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px">
+<h2 class="t-h3">{{ r.title }}</h2>
+<button type="button" onClick="{{ r.edit }}" style="background:none;border:0;padding:0;font:600 14px var(--font-sans);color:var(--accent);text-decoration:underline;text-underline-offset:3px;cursor:pointer">Edit</button>
+</div>
+<dl class="u-dl">
+<sc-for list="{{ r.rows }}" as="row" hint-placeholder-count="3"><dt>{{ row.k }}</dt><dd>{{ row.v }}</dd></sc-for>
+</dl>
+</section>
+</sc-for>
+<div style="padding-top:28px;display:grid;gap:16px">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Checkbox" label="Everything here is true, and {{ k.shelter }} can contact me about {{ k.name }}" checked="{{ agreed }}" on-change="{{ toggleAgree }}" hint-size="100%,48px"></x-import>
+<p class="t-caption" style="margin:0">Sending this doesn't commit you to anything. You can withdraw at any time.</p>
+</div>
+</div>
+</sc-if>
+
+<div class="ap-actions" style="display:flex;justify-content:space-between;align-items:center;gap:16px;max-width:620px;padding-top:28px;border-top:1px solid var(--border)" data-no-route="">
+<sc-if value="{{ hasBack }}" hint-placeholder-val="{{ false }}"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Button" variant="ghost" icon="arrow-left" on-click="{{ back }}" hint-size="auto,48px">Back</x-import></sc-if>
+<span class="t-caption" style="margin-right:auto;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#CFC4B2">Saved just now</span>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Button" icon-end="{{ nextIcon }}" disabled="{{ nextDisabled }}" on-click="{{ next }}" hint-size="auto,48px">{{ nextLabel }}</x-import>
+</div>
+</div>
+<div></div>
+<aside class="a-aside" style="position:sticky;top:32px;display:grid;gap:0;padding:24px 24px 8px;background:#EFEEE3;border:1px solid #E3E4D6;border-radius:20px;max-width:380px;width:100%;justify-self:end">
+<div style="display:grid;grid-template-columns:72px minmax(0,1fr);gap:16px;align-items:center;padding-bottom:24px">
+<div style="position:relative;width:72px;height:72px">
+<span aria-hidden="true" style="position:absolute;inset:-4px;border-radius:50%;background:#FBF8F2"></span>
+<span role="img" aria-label="{{ k.name }}" style="position:absolute;inset:0;border-radius:50%;background-color:var(--paper-200);background-image:{{ k.bg }};background-size:cover;background-position:center"></span>
+</div>
+<div style="display:grid;gap:8px;min-width:0">
+<span style="font:700 12px/1 var(--font-sans);letter-spacing:.14em;text-transform:uppercase;color:#6F665B">Applying for</span>
+<span style="font:800 30px/1 'Between 2','Bricolage Grotesque',var(--font-headline);letter-spacing:-.04em;color:#16130F">{{ k.name }}</span>
+<span style="font:500 14px/1.35 var(--font-sans);color:#5E584D">{{ k.age }} · {{ k.shelter }}</span>
+</div>
+</div>
+<div class="a-aside-full" style="display:grid;border-top:1px solid #D9DBCA">
+<div style="display:grid;grid-template-columns:32px minmax(0,1fr);column-gap:16px;align-items:start;padding:16px 0;">
+<span style="flex:none;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#E0E3D2;color:#3F4834"><svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M5 21a7 7 0 0 1 14 0"></path></svg></span>
+<div style="display:grid;gap:6px;padding-top:2px"><span style="font:700 12px/1 var(--font-sans);letter-spacing:.14em;text-transform:uppercase;color:#6F665B;line-height:14px">Who reads this</span><p style="margin:0;font:400 14.5px/1.5 var(--font-sans);color:#2E2A25;text-wrap:pretty">{{ k.reads }}</p></div>
+</div>
+<div style="display:grid;grid-template-columns:32px minmax(0,1fr);column-gap:16px;align-items:start;padding:16px 0;border-top:1px solid #E0E2D3">
+<span style="flex:none;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#E0E3D2;color:#3F4834"><svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>
+<div style="display:grid;gap:6px;padding-top:2px"><span style="font:700 12px/1 var(--font-sans);letter-spacing:.14em;text-transform:uppercase;color:#6F665B;line-height:14px">Takes about</span><p style="margin:0;font:400 14.5px/1.5 var(--font-sans);color:#2E2A25;text-wrap:pretty">12 minutes. Your answers are saved as you go.</p></div>
+</div>
+<div style="display:grid;grid-template-columns:32px minmax(0,1fr);column-gap:16px;align-items:start;padding:16px 0;border-top:1px solid #E0E2D3">
+<span style="flex:none;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#E0E3D2;color:#3F4834"><svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg></span>
+<div style="display:grid;gap:6px;padding-top:2px"><span style="font:700 12px/1 var(--font-sans);letter-spacing:.14em;text-transform:uppercase;color:#6F665B;line-height:14px">Questions?</span><p style="margin:0;font:400 14.5px/1.5 var(--font-sans);color:#2E2A25;text-wrap:pretty"><span style="display:grid;gap:2px"><span>{{ k.phone }}</span><a href="mailto:{{ k.email }}" style="color:#2E2A25;text-decoration:underline;text-decoration-color:#BDB3A4;text-underline-offset:3px" style-hover="color:#B24A25">{{ k.email }}</a></span></p></div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+</sc-if>
+
+<sc-if value="{{ s6 }}" hint-placeholder-val="{{ false }}">
+<main class="container" data-screen-label="Application sent" style="padding-top:clamp(40px,6vw,88px);padding-bottom:var(--section-gap)">
+<div class="a-done" style="display:grid;column-gap:var(--grid-gutter);row-gap:48px;align-items:center">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.PhotoFrame" src="{{ k.photo }}" alt="{{ k.name }}" shape="arch" ratio="4/5" hint-size="100%,560px"></x-import>
+<div></div>
+<div style="display:grid;gap:28px;max-width:560px">
+<div style="display:flex;align-items:center;gap:12px">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Squiggle" width="{{ 36 }}" height="{{ 10 }}" cycles="{{ 2 }}" tone="{{ 2 }}" hint-size="36px,10px"></x-import>
+<span class="t-overline t-muted">Application Nº A-2291 · sent 23 Sep</span>
+</div>
+<h1 class="t-display-m">{{ k.name }}'s people have <em>your letter.</em></h1>
+<p class="t-body-l t-secondary" style="margin:0">We've sent a copy to olena.k@gmail.com. {{ k.first }} usually replies within a day or two — you'll hear back by email and here.</p>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.AdoptionJourney" steps="{{ journey }}" hint-size="100%,260px"></x-import>
+<div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Button" href="Status.dc.html" hint-size="auto,48px">Track application</x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.TextLink" href="Browse.dc.html" hint-size="auto,24px">Back to browsing</x-import>
+</div>
+</div>
+</div>
+</main>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Footer" hint-size="100%,360px"></x-import>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;startStep&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:1,&quot;max&quot;:6,&quot;step&quot;:1,&quot;default&quot;:1,&quot;tsType&quot;:&quot;number&quot;}}">
+class Component extends DCLogic {
+  state = { fn: "Olena", ln: "Kovalenko", em: "olena.k@gmail.com", ph: "+380 67 214 5580", step: 0, rent: true, agreed: true, city: "kyiv-podil", alone: "4-6" };
+  componentDidMount() {
+    const q = parseInt((location.search.match(/step=(\d)/) || [])[1] || this.props.startStep || 1, 10);
+    if (q > 1) this.setState({ step: Math.min(6, q) - 1 });
+    try { const d = JSON.parse(localStorage.getItem("cate.apply.draft") || "null"); if (d) this.setState(d); } catch (_) {}
+  }
+  go(step) { this.setState({ step }); window.scrollTo(0, 0); }
+  renderVals() {
+    const s = this.state.step;
+    const D = window.CATE_MOCK;
+    const cid = new URLSearchParams(location.search).get("id") || "0142";
+    const c = (D && (D.byId(cid) || D.byId("0142"))) || { id: "0142", name: "Juniper", age: "4 yrs", sex: "Female", shelter: "Podil Street Rescue", photo: "photos/tabby-sofa.jpg" };
+    const sh = D && (D.sheltersAll || []).find((x) => x.name === c.shelter);
+    const X = (D && D.details && sh && D.details[sh.slug]) || {};
+    const person = X.person || "The shelter";
+    const fee = ((X.fee || "").match(/\$\d+/) || ["$60"])[0];
+    const male = c.sex === "Male";
+    const k = { name: c.name, age: c.age, shelter: c.shelter, short: X.short || c.shelter, photo: c.photo, bg: "url(" + c.photo + ")", profile: "Profile.dc.html?id=" + c.id,
+      she: male ? "he" : "she", him: male ? "him" : "her", first: person.split(" ")[0].replace(/,$/, ""), fee,
+      reads: c.id === "0142" ? "Maya R., who feeds Juniper most mornings. She reads every application herself and usually replies within a day." : person + " at " + (X.short || c.shelter) + " reads every application personally. " + (X.reads || ""),
+      phone: X.phone || "+380 44 425 1180", email: X.email || "hello@podilstreet.org" };
+    const cities = [["kyiv-podil", "Kyiv — Podil"], ["kyiv-obolon", "Kyiv — Obolon"], ["kyiv-pechersk", "Kyiv — Pechersk"], ["kyiv-other", "Kyiv — another district"], ["irpin", "Irpin"], ["bucha", "Bucha"], ["brovary", "Brovary"]].map(([value, label]) => ({ value, label }));
+    const aloneOptions = [["0-2", "Under 2 hours"], ["2-4", "2–4 hours"], ["4-6", "4–6 hours"], ["6-9", "6–9 hours"], ["9+", "More than 9 hours"]].map(([value, label]) => ({ value, label }));
+    const copy = [
+      ["About you", "Just the basics, so " + k.first + " knows who they're talking to."],
+      ["Your home", "Not a test. It helps the shelter picture " + k.name + "'s first week with you."],
+      ["Life with pets", "First-time adopters are welcome. This is about fit, not credentials."],
+      ["What you're hoping for", "The part " + k.first + " reads most carefully. Take your time."],
+      ["Check and send", "Read it through once. You can edit any section before sending."],
+    ];
+    const lbl = (arr, v) => (arr.find((o) => o.value === v) || {}).label;
+    const F = {}; ["fn", "ln", "em", "ph"].forEach((key) => { F[key] = this.state[key]; F["set_" + key] = (e) => { const v = e.target.value; this.setState((st) => { const n = { [key]: v }; if (st.tried && key === "fn" && v.trim()) n.eFn = ""; if (st.tried && key === "em" && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim())) n.eEm = ""; try { localStorage.setItem("cate.apply.draft", JSON.stringify({ fn: st.fn, ln: st.ln, em: st.em, ph: st.ph, ...n })); } catch (_) {} return n; }); }; });
+    return {
+      f: F, setCityNative: (e) => this.setState({ city: e.target.value }),
+      k,
+      steps: ["About you", "Home", "Pets", "Hopes", "Review"],
+      step: Math.min(s, 4), inForm: s < 5,
+      s1: s === 0, s2: s === 1, s3: s === 2, s4: s === 3, s5: s === 4, s6: s === 5,
+      title: (copy[s] || copy[0])[0], why: (copy[s] || copy[0])[1],
+      prevent: (e) => e.preventDefault(),
+      cities, city: this.state.city, setCity: (v) => this.setState({ city: v && v.target ? v.target.value : v }),
+      aloneOptions, alone: this.state.alone, setAlone: (v) => this.setState({ alone: v && v.target ? v.target.value : v }),
+      rents: this.state.rent, owns: !this.state.rent,
+      setRent: () => this.setState({ rent: true }), setOwn: () => this.setState({ rent: false }),
+      agreed: this.state.agreed, toggleAgree: () => this.setState((x) => ({ agreed: !x.agreed })),
+      hasBack: s > 0 && s < 5, savedGap: s > 0 ? "16px" : "0",
+      back: () => this.go(Math.max(0, s - 1)),
+      next: () => { if (s === 0) { const eFn = this.state.fn.trim() ? "" : "Add your first name so the shelter knows who's writing."; const eEm = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.state.em.trim()) ? "" : (this.state.em.trim() ? "That email looks incomplete — check for a typo." : "Add an email so the shelter can reply."); if (eFn || eEm) { this.setState({ eFn, eEm, tried: true }); const el = document.getElementById(eFn ? "fn" : "em"); el && el.focus(); return; } } this.setState({ eFn: "", eEm: "" }); this.go(s + 1); },
+      errFn: this.state.eFn || "", errEm: this.state.eEm || "", noErrEm: !this.state.eEm, errFnB: this.state.eFn ? "true" : "false", errEmB: this.state.eEm ? "true" : "false",
+      nextLabel: s === 4 ? "Send application" : "Continue",
+      nextIcon: s === 4 ? "arrow-right" : "arrow-right",
+      nextDisabled: s === 4 && !this.state.agreed,
+      review: [
+        { title: "About you", edit: () => this.go(0), rows: [{ k: "Name", v: (this.state.fn + " " + this.state.ln).trim() }, { k: "Email", v: this.state.em }, { k: "Phone", v: this.state.ph || "—" }, { k: "Lives in", v: lbl(cities, this.state.city) }] },
+        { title: "Your home", edit: () => this.go(1), rows: [{ k: "Home", v: "Apartment, " + (this.state.rent ? "rented — landlord allows cats" : "owned") }, { k: "Household", v: "2 adults, one child aged 9" }, { k: "Outdoors", v: "Balcony with netting" }] },
+        { title: "Life with pets", edit: () => this.go(2), rows: [{ k: "Experience", v: "Yes, as an adult" }, { k: "Other pets", v: "None" }, { k: "Vet", v: "VetCity, Obolon" }] },
+        { title: "What you're hoping for", edit: () => this.go(3), rows: [{ k: "Why " + k.name, v: "We work from home most days and have a sunny window over the courtyard…" }, { k: "Alone each day", v: lbl(aloneOptions, this.state.alone) }, { k: "Agreed to", v: "3 of 4 shelter questions" }] },
+      ],
+      journey: [
+        { title: "Application sent", detail: "Everything you wrote, exactly as you wrote it.", when: "Today, 14:32", state: "done" },
+        { title: k.first + " reads it", detail: "They may call or email with a question or two.", when: "Usually within a day", state: "current" },
+        { title: "Meet " + k.name, detail: "A visit at " + k.short + ", about 40 minutes." },
+        { title: "Adoption day", detail: "Sign, pay the " + k.fee + " fee, and take " + k.him + " home." },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

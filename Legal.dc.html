@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<style>html,body{margin:0;background:#F4EFE5;color:#1E1B17}@view-transition{navigation:auto}::view-transition-old(root),::view-transition-new(root){animation-duration:140ms;animation-timing-function:ease}@media (prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}}h1,h2,h3,h4,h1 em,h2 em,h3 em,.t-display-xl,.t-display-l,.t-display-m,.t-display-xl em,.t-display-l em,.t-display-m em,.t-h1,.t-h2,.t-h3,.c-block__t,.c-stat__n,.t-name,.t-name-l,.c-cat__name,.c-shelter__name{font-family:'Between 2','Bricolage Grotesque',var(--font-headline)!important;font-weight:800!important;font-style:normal!important}.t-name,.t-name-l,.c-cat__name,.c-shelter__name,.t-h3,h3{letter-spacing:-.035em!important}.t-name,.t-name-l,.c-cat__name{font-family:'Between 2','Bricolage Grotesque','Manrope',sans-serif!important;font-style:normal!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/fonts/Manrope-normal-var.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/fonts/DMSerifDisplay-normal.woff2" crossorigin>
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/colors.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/typography.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/base.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/components.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+<link rel="stylesheet" href="cate.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
+<script src="./support.js"></script>
+<script src="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/_ds_bundle.js"></script>
+<script src="cate-data.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="icon" type="image/png" href="assets/icon-cream.png">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/colors.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/typography.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/base.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/components.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;display=swap">
+<link rel="stylesheet" href="cate.css">
+<style>body{margin:0;background:#F4EFE5;color:#1E1B17}a{color:var(--text-primary)}a:hover{color:var(--accent)}
+.lg-main{grid-template-columns:minmax(0,3fr) minmax(0,1fr) minmax(0,8fr)}
+@media (max-width:1023px){.lg-main{grid-template-columns:1fr}.lg-main>:nth-child(2){display:none}.lg-toc{position:static!important;display:flex!important;gap:8px!important;flex-wrap:wrap}}</style>
+</helmet>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Navbar" signed-in="{{ true }}" hint-size="100%,72px"></x-import>
+<main class="container" data-screen-label="Legal" style="padding-top:clamp(36px,5vw,72px);padding-bottom:var(--section-gap)">
+<header style="display:grid;gap:16px;max-width:760px;margin-bottom:clamp(40px,5vw,64px)">
+<div style="display:flex;align-items:center;gap:12px">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Squiggle" width="{{ 36 }}" height="{{ 10 }}" cycles="{{ 2 }}" hint-size="36px,10px"></x-import>
+<span class="t-overline t-muted">Updated 1 September 2026</span>
+</div>
+<h1 class="t-display-m">The small print, <em>kept short.</em></h1>
+<p class="t-body-l t-secondary" style="margin:0;max-width:620px">What we collect, what you agree to, and how we keep CATÉ usable for everyone. Questions go to <a href="mailto:hello@cate.org.ua">hello@cate.org.ua</a>.</p>
+</header>
+<div class="lg-main" style="display:grid;column-gap:var(--grid-gutter);row-gap:32px;align-items:start">
+<nav aria-label="On this page" class="lg-toc" style="display:grid;gap:4px;position:sticky;top:96px">
+<a href="#privacy" style="display:flex;align-items:center;min-height:44px;padding:0 16px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font:600 15px/1 var(--font-sans);text-decoration:none">Privacy</a>
+<a href="#terms" style="display:flex;align-items:center;min-height:44px;padding:0 16px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font:600 15px/1 var(--font-sans);text-decoration:none">Terms</a>
+<a href="#accessibility" style="display:flex;align-items:center;min-height:44px;padding:0 16px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font:600 15px/1 var(--font-sans);text-decoration:none">Accessibility</a>
+</nav>
+<div></div>
+<div style="display:grid;gap:clamp(56px,6vw,88px);max-width:720px">
+<section id="privacy" style="display:grid;gap:16px;scroll-margin-top:96px">
+<h2 class="t-h2">Privacy</h2>
+<p class="t-body" style="margin:0">We collect only what a shelter needs to consider your application: your name, contact details, home situation and the answers you give. Saved cats and drafts stay in your browser until you apply.</p>
+<p class="t-body" style="margin:0">Your application is shared with the one shelter you apply to — nobody else. We don't sell data or run advertising trackers. You can download or delete everything from <a href="Account.dc.html">your account</a> at any time.</p>
+</section>
+<section id="terms" style="display:grid;gap:16px;scroll-margin-top:96px">
+<h2 class="t-h2">Terms</h2>
+<p class="t-body" style="margin:0">CATÉ connects you with partner shelters. The shelter makes every adoption decision and sets its own fee; fees go to the shelter in full.</p>
+<p class="t-body" style="margin:0">Please apply honestly and for one cat at a time unless a shelter suggests a bonded pair. Profiles are written by shelter staff; if something looks wrong, tell us and we'll check with them.</p>
+</section>
+<section id="accessibility" style="display:grid;gap:16px;scroll-margin-top:96px">
+<h2 class="t-h2">Accessibility</h2>
+<p class="t-body" style="margin:0">We aim for WCAG 2.2 AA: every page works with a keyboard, has visible focus, readable contrast and descriptive photo text, and respects reduced-motion settings.</p>
+<p class="t-body" style="margin:0">If anything gets in your way, email <a href="mailto:hello@cate.org.ua">hello@cate.org.ua</a> and we'll reply within two working days — and help you apply by phone in the meantime.</p>
+</section>
+</div>
+</div>
+</main>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Footer" hint-size="100%,360px"></x-import>
+</x-dc>
+</body>
+</html>

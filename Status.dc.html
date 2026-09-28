@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<style>html,body{margin:0;background:#F4EFE5;color:#1E1B17}@view-transition{navigation:auto}::view-transition-old(root),::view-transition-new(root){animation-duration:140ms;animation-timing-function:ease}@media (prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}}h1,h2,h3,h4,h1 em,h2 em,h3 em,.t-display-xl,.t-display-l,.t-display-m,.t-display-xl em,.t-display-l em,.t-display-m em,.t-h1,.t-h2,.t-h3,.c-block__t,.c-stat__n,.t-name,.t-name-l,.c-cat__name,.c-shelter__name{font-family:'Between 2','Bricolage Grotesque',var(--font-headline)!important;font-weight:800!important;font-style:normal!important}.t-name,.t-name-l,.c-cat__name,.c-shelter__name,.t-h3,h3{letter-spacing:-.035em!important}.t-name,.t-name-l,.c-cat__name{font-family:'Between 2','Bricolage Grotesque','Manrope',sans-serif!important;font-style:normal!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/fonts/Manrope-normal-var.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/fonts/DMSerifDisplay-normal.woff2" crossorigin>
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/colors.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/typography.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/base.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/components.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+<link rel="stylesheet" href="cate.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
+<script src="./support.js"></script>
+<script src="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/_ds_bundle.js"></script>
+<script src="cate-data.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+
+<link rel="icon" type="image/png" href="assets/icon-cream.png">
+<link rel="apple-touch-icon" href="assets/icon-rust.png">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+<link rel="stylesheet" href="cate.css">
+<style>
+.s-head{grid-template-columns:minmax(0,8fr) minmax(0,1fr) minmax(0,3fr)}
+.s-main{grid-template-columns:minmax(0,5fr) minmax(0,1fr) minmax(0,6fr)}
+@media (max-width:1023px){.s-head,.s-main{grid-template-columns:1fr}.s-head>:nth-child(2),.s-main>:nth-child(2){display:none}.s-photo{max-width:260px}}
+</style>
+</helmet>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Navbar" signed-in="{{ true }}" hint-size="100%,72px"></x-import>
+<main class="container" data-screen-label="Application status" style="padding-top:28px;padding-bottom:var(--section-gap)">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.TextLink" variant="quiet" href="Account.dc.html" hint-size="auto,24px"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="arrow-left" size="{{ 16 }}" hint-size="16px,16px"></x-import>Your applications</x-import>
+
+<div class="s-head" style="display:grid;column-gap:var(--grid-gutter);row-gap:32px;align-items:end;margin-top:clamp(28px,4vw,48px)">
+<div style="display:grid;gap:20px">
+<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Badge" tone="{{ badgeTone }}" hint-size="auto,24px">{{ badge }}</x-import>
+<span class="t-caption t-num">Application Nº A-2291 · sent 23 Sep</span>
+</div>
+<h1 class="t-display-m">{{ headline }} <em>{{ headlineEm }}</em></h1>
+<p class="t-body-l t-secondary" style="margin:0;max-width:620px">{{ lede }}</p>
+</div>
+<div></div>
+<div class="s-photo">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.PhotoFrame" src="photos/tabby-sofa.jpg" alt="Juniper" shape="arch" ratio="4/5" hint-size="100%,340px"></x-import>
+</div>
+</div>
+
+<div class="s-main" style="display:grid;column-gap:var(--grid-gutter);row-gap:56px;margin-top:clamp(56px,7vw,104px);align-items:start">
+<section style="display:grid;gap:28px">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.SquiggleDivider" label="Where things are" hint-size="100%,24px"></x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.AdoptionJourney" steps="{{ journey }}" hint-size="100%,320px"></x-import>
+</section>
+<div></div>
+<div style="display:grid;gap:40px">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.ColorBlock" tone="{{ nextTone }}" eyebrow="Your next step" title="{{ nextTitle }}" line="{{ nextLine }}" link-label="{{ nextLink }}" href="{{ nextHref }}" hint-size="100%,260px"></x-import>
+<section style="display:grid;gap:16px">
+<span class="t-overline t-muted">Latest from Podil Street</span>
+<blockquote style="margin:0;display:grid;gap:16px">
+<p class="t-quote" style="font-size:22px;line-height:1.4;margin:0">“{{ message }}”</p>
+<footer style="display:flex;align-items:center;gap:12px">
+<img src="photos/colorpoint.jpg" alt="" style="width:40px;height:40px;border-radius:50%;object-fit:cover">
+<span><span class="t-label">Maya R.</span> <span class="t-caption">· {{ messageWhen }}</span></span>
+</footer>
+</blockquote>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:4px">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Button" variant="secondary" size="s" icon="mail" hint-size="auto,36px">Reply to Maya</x-import>
+</div>
+</section>
+<section style="display:grid;gap:16px;padding-top:28px;border-top:1px solid var(--border)">
+<span class="t-overline t-muted">Details</span>
+<dl class="u-dl">
+<dt>Cat</dt><dd>Juniper, 4 yrs · Nº 0142</dd>
+<dt>Shelter</dt><dd>Podil Street Rescue, Kostiantynivska St 21, Kyiv</dd>
+<dt>Contact</dt><dd>+380 44 425 1180 · hello@podilstreet.org</dd>
+<dt>Adoption fee</dt><dd>$95, paid on adoption day</dd>
+</dl>
+<div style="display:flex;gap:24px;flex-wrap:wrap;margin-top:8px">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.TextLink" href="Apply.dc.html?step=5" hint-size="auto,24px">View your answers</x-import>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.TextLink" variant="quiet" href="Account.dc.html" on-click="{{ withdraw }}" hint-size="auto,24px">Withdraw application</x-import>
+</div>
+</section>
+</div>
+</div>
+</main>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Footer" hint-size="100%,360px"></x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;stage&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;submitted&quot;,&quot;review&quot;,&quot;meet&quot;,&quot;approved&quot;],&quot;default&quot;:&quot;review&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { q: null };
+  componentDidMount() { const m = location.search.match(/stage=(\w+)/); if (m) this.setState({ q: m[1] }); }
+  renderVals() {
+    const order = ["submitted", "review", "meet", "approved"];
+    const stage = this.state.q || this.props.stage || "review";
+    const idx = Math.max(0, order.indexOf(stage));
+    const S = {
+      submitted: { badge: "Submitted", tone: "info", h: "Sent. Maya will read it", em: "tomorrow.", lede: "Podil Street has your application. Nothing to do for now — we'll email you the moment she replies.", nt: "sage", nT: "Nothing to do yet", nL: "Most replies come within a day. Meanwhile, Maya's first-week guide is worth ten minutes.", nk: "Read the guide", msg: "Thank you, Olena. I'll read it properly first thing tomorrow.", mw: "Today, 14:40" },
+      review: { badge: "Under review", tone: "pending", h: "Maya is reading your", em: "application.", lede: "She's asked one question about your balcony. Everything else looks good so far.", nt: "rust", nT: "Answer one question", nL: "Is the balcony netting on all sides, or just the front? A photo is perfect.", nk: "Reply with a photo", msg: "Lovely application. One thing — could you send a photo of the balcony? Juniper is a climber.", mw: "Yesterday, 10:12" },
+      meet: { badge: "Meet & greet", tone: "success", h: "Time to meet", em: "Juniper.", lede: "Maya would like you to visit. Bring everyone who lives with you — including your daughter.", nt: "rust", nT: "Pick a visit time", nL: "Weekdays 11–6 or Saturday morning. Visits take about 40 minutes.", nk: "Choose a time", msg: "Balcony looks great. Juniper would love to meet you — pick any time that suits.", mw: "Today, 09:05" },
+      approved: { badge: "Approved", tone: "success", h: "Juniper is coming", em: "home.", lede: "Adoption day is Saturday 4 October. Bring ID and a carrier; the shelter has everything else.", nt: "charcoal", nT: "Saturday, 11:00", nL: "Podil Street Rescue, Kostiantynivska St 21. The $95 fee is paid there.", nk: "Add to calendar", msg: "She's been sitting by the door all week. See you Saturday.", mw: "Today, 16:20" },
+    }[order[idx]];
+    const steps = [
+      { title: "Submitted", detail: "Your answers went straight to Podil Street.", when: "23 Sep, 14:32" },
+      { title: "Under review", detail: "Maya reads it and may ask a question or two.", when: idx > 1 ? "Done 25 Sep" : idx === 1 ? "Question sent 24 Sep" : "Usually within a day" },
+      { title: "Meet & greet", detail: "A 40-minute visit at the shelter.", when: idx > 2 ? "Visited 28 Sep" : idx === 2 ? "Waiting for you to pick a time" : "" },
+      { title: "Approved", detail: "Sign, pay the fee, take her home.", when: idx === 3 ? "Saturday 4 Oct, 11:00" : "" },
+    ];
+    return {
+      badge: S.badge, badgeTone: S.tone, headline: S.h, headlineEm: S.em, lede: S.lede,
+      nextHref: { submitted: "HowItWorks.dc.html", review: "mailto:hello@podilstreet.org?subject=" + encodeURIComponent("Balcony photo for Juniper"), meet: "Shelter.dc.html?id=podil#contact", approved: "data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0AVERSION%3A2.0%0ABEGIN%3AVEVENT%0ASUMMARY%3AAdoption%20day%20%E2%80%94%20Juniper%0ADTSTART%3A20261004T080000Z%0ADTEND%3A20261004T090000Z%0ALOCATION%3APodil%20Street%20Rescue%2C%20Kostiantynivska%20St%2021%2C%20Kyiv%0AEND%3AVEVENT%0AEND%3AVCALENDAR" }[order[idx]],
+      withdraw: (e) => { if (!window.confirm("Withdraw your application for Juniper? Maya will be told, and you can apply again later.")) { e.preventDefault(); e.stopPropagation(); } },
+      nextTone: S.nt, nextTitle: S.nT, nextLine: S.nL, nextLink: S.nk, message: S.msg, messageWhen: S.mw,
+      journey: steps.map((s, i) => ({ ...s, when: s.when || undefined, state: i < idx || (idx === 3 && i === 3) ? "done" : i === idx ? "current" : "upcoming" })),
+    };
+  }
+}
+</script>
+</body>
+</html>

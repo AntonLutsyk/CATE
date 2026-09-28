@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><meta name="design_doc_mode" content="canvas"><link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/styles.css"><style>body{margin:0;background:#e8e2d6;font-family:var(--font-sans)}a{color:var(--text-primary)}a:hover{color:var(--accent)}.dv-turn{padding:48px 56px 40px;scroll-margin-top:16px}.dv-thd{display:flex;align-items:baseline;gap:12px;margin:0 0 8px}.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1e1b17;color:#fff;border-radius:4px;text-decoration:none}.dv-tname{font:800 15px/1.2 var(--font-sans);color:#1e1b17}.dv-opts{display:flex;flex-direction:column;gap:72px;align-items:flex-start}.dv-opt{flex:none;display:flex;flex-direction:column;gap:12px;scroll-margin-top:16px}.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}.dv-olabel{display:flex;align-items:baseline;gap:8px;font:600 13px/1.3 var(--font-sans);color:#1e1b17}.dv-card{background:var(--bg);border:1px solid rgba(0,0,0,.08);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);overflow:hidden}.dv-opt:target .dv-oid{background:#b24a25;color:#fff}.dv-next{margin:40px 0 0;font:12px/1.5 var(--font-sans);color:rgba(0,0,0,.55)}</style></helmet>
+<section class="dv-turn" id="t2">
+<div class="dv-thd"><a class="dv-tid" href="#t2">2</a><span class="dv-tname">Favourites, application, status, shelters, account — desktop 1440 + mobile 390</span></div>
+<p style="margin:0 0 40px;max-width:760px;font-size:14px;line-height:1.55;color:var(--text-secondary)">Each screen has its own composition: an editorial list for favourites, a focused single-column form with a quiet aside for the application, a journey timeline for status, a featured-then-directory layout for shelters, and a sidebar account. Every screen is clickable — the navbar, hearts and “Start application” link through.</p>
+<div class="dv-opts">
+<sc-for list="{{ screens2 }}" as="s" hint-placeholder-count="4">
+<div class="dv-opt" id="{{ s.id }}">
+<div class="dv-olabel"><a class="dv-oid" href="{{ s.hash }}">{{ s.id }}</a>{{ s.name }}<span style="font-weight:400;color:var(--text-muted)">{{ s.note }}</span></div>
+<div style="display:flex;gap:48px;align-items:flex-start">
+<div style="display:grid;gap:8px"><span class="t-overline t-muted">Desktop · 1440</span><div class="dv-card" style="width:1440px"><iframe src="{{ s.file }}" ref="{{ fit }}" title="{{ s.name }} desktop" style="display:block;width:1440px;height:1600px;border:0"></iframe></div></div>
+<div style="display:grid;gap:8px"><span class="t-overline t-muted">Mobile · 390</span><div class="dv-card" style="width:390px;border-radius:28px"><iframe src="{{ s.file }}" ref="{{ fit }}" title="{{ s.name }} mobile" style="display:block;width:390px;height:1600px;border:0"></iframe></div></div>
+</div>
+</div>
+</sc-for>
+</div>
+</section>
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Home, browse and cat profile — desktop 1440 + mobile 390</span></div>
+<p style="margin:0 0 40px;max-width:760px;font-size:14px;line-height:1.55;color:var(--text-secondary)">Built entirely from CATÉ components. Composition leans on the system's photo shapes and colour blocks: arch hero with a circular inset, a rust / charcoal / sage block row, colour blocks placed inside the browse grid, and a rust fees block on the profile. Each screen is one responsive file, shown here at both widths.</p>
+<div class="dv-opts">
+<sc-for list="{{ screens }}" as="s" hint-placeholder-count="3">
+<div class="dv-opt" id="{{ s.id }}">
+<div class="dv-olabel"><a class="dv-oid" href="{{ s.hash }}">{{ s.id }}</a>{{ s.name }}<span style="font-weight:400;color:var(--text-muted)">{{ s.note }}</span></div>
+<div style="display:flex;gap:48px;align-items:flex-start">
+<div style="display:grid;gap:8px"><span class="t-overline t-muted">Desktop · 1440</span><div class="dv-card" style="width:1440px"><iframe src="{{ s.file }}" ref="{{ fit }}" title="{{ s.name }} desktop" style="display:block;width:1440px;height:2400px;border:0"></iframe></div></div>
+<div style="display:grid;gap:8px"><span class="t-overline t-muted">Mobile · 390</span><div class="dv-card" style="width:390px;border-radius:28px"><iframe src="{{ s.file }}" ref="{{ fit }}" title="{{ s.name }} mobile" style="display:block;width:390px;height:2400px;border:0"></iframe></div></div>
+</div>
+</div>
+</sc-for>
+</div>
+<p class="dv-next">Try next: "a list view for browse" · "the adoption application flow" · "more dramatic hero on <a class="dv-oid" href="#1a">1a</a>"</p>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  fit = (el) => {
+    if (!el || el._fit) return;
+    el._fit = true;
+    const size = () => { try { const d = el.contentDocument; if (!d || !d.body) return; const f = d.querySelector(".c-footer"); const h = f ? Math.ceil(f.getBoundingClientRect().bottom + d.defaultView.scrollY) : d.documentElement.scrollHeight; if (h > 200 && Math.abs(h - el.offsetHeight) > 2) el.style.height = h + "px"; } catch (e) {} };
+    el.addEventListener("load", () => { size(); let n = 0; const t = setInterval(() => { size(); if (++n > 40) clearInterval(t); }, 250); });
+  };
+  renderVals() {
+    return {
+      fit: this.fit,
+      screens2: [
+        { id: "2a", hash: "#2a", name: "Favourites", note: "Saved list with notes and status, remove + undo, recently viewed", file: "Favorites.dc.html" },
+        { id: "2b", hash: "#2b", name: "Favourites — empty", note: "Empty state with a way back to browsing", file: "Favorites.dc.html?empty=1" },
+        { id: "2c", hash: "#2c", name: "Application — step 1 of 5", note: "Click Continue to walk all steps", file: "Apply.dc.html" },
+        { id: "2d", hash: "#2d", name: "Application — step 3, pets", note: "", file: "Apply.dc.html?step=3" },
+        { id: "2e", hash: "#2e", name: "Application — review", note: "Editable summary, consent gates Send", file: "Apply.dc.html?step=5" },
+        { id: "2f", hash: "#2f", name: "Application — sent", note: "Confirmation and what happens next", file: "Apply.dc.html?step=6" },
+        { id: "2g", hash: "#2g", name: "Application status — under review", note: "Stage is a tweak: submitted / review / meet / approved", file: "Status.dc.html" },
+        { id: "2h", hash: "#2h", name: "Application status — meet & greet", note: "", file: "Status.dc.html?stage=meet" },
+        { id: "2i", hash: "#2i", name: "Shelter directory", note: "Search and filters are live", file: "Shelters.dc.html" },
+        { id: "2j", hash: "#2j", name: "Shelter profile — Podil Street Rescue", note: "Story, available cats, visit & contact", file: "Shelter.dc.html" },
+        { id: "2k", hash: "#2k", name: "Account", note: "Applications, saved, profile, settings", file: "Account.dc.html" },
+        { id: "2l", hash: "#2l", name: "Account — settings", note: "", file: "Account.dc.html?tab=settings" },
+      ],
+      screens: [
+        { id: "1a", hash: "#1a", name: "Home / discovery", note: "Hero search, mood blocks, longest-waiting spotlight, new arrivals, shelters", file: "Home.dc.html" },
+        { id: "1b", hash: "#1b", name: "Browse results + filters", note: "\"Good with kids\" applied; colour blocks break the grid", file: "Browse.dc.html" },
+        { id: "1c", hash: "#1c", name: "Cat profile — Juniper", note: "Gallery, temperament, ideal home, fees", file: "Profile.dc.html" },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<style>html,body{margin:0;background:#F4EFE5;color:#1E1B17}@view-transition{navigation:auto}::view-transition-old(root),::view-transition-new(root){animation-duration:140ms;animation-timing-function:ease}@media (prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}}h1,h2,h3,h4,h1 em,h2 em,h3 em,.t-display-xl,.t-display-l,.t-display-m,.t-display-xl em,.t-display-l em,.t-display-m em,.t-h1,.t-h2,.t-h3,.c-block__t,.c-stat__n,.t-name,.t-name-l,.c-cat__name,.c-shelter__name{font-family:'Between 2','Bricolage Grotesque',var(--font-headline)!important;font-weight:800!important;font-style:normal!important}.t-name,.t-name-l,.c-cat__name,.c-shelter__name,.t-h3,h3{letter-spacing:-.035em!important}.t-name,.t-name-l,.c-cat__name{font-family:'Between 2','Bricolage Grotesque','Manrope',sans-serif!important;font-style:normal!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/fonts/Manrope-normal-var.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/fonts/DMSerifDisplay-normal.woff2" crossorigin>
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/colors.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/typography.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/base.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/components.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+<link rel="stylesheet" href="cate.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
+<script src="./support.js"></script>
+<script src="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/_ds_bundle.js"></script>
+<script src="cate-data.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+
+<link rel="icon" type="image/png" href="assets/icon-cream.png">
+<link rel="apple-touch-icon" href="assets/icon-rust.png">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+<link rel="stylesheet" href="cate.css">
+<style>
+.f-main{grid-template-columns:minmax(0,8fr) minmax(0,1fr) minmax(0,3fr)}
+.f-row{grid-template-columns:200px minmax(0,1fr);box-shadow:0 1px 2px rgba(30,27,23,.04),0 8px 24px -12px rgba(30,27,23,.10);transition:border-color 200ms cubic-bezier(.2,.7,.2,1)}
+.f-row:hover{border-color:var(--paper-300)}
+.f-ph{position:relative;min-height:176px}.f-ph img{position:absolute;inset:0}.f-ph img{transition:transform 700ms cubic-bezier(.2,.7,.2,1)}.f-row:hover .f-ph img{transform:scale(1.025)}
+.f-chip{display:inline-flex;align-items:center;gap:7px;height:32px;padding:0 14px;border-radius:999px;background:var(--paper-100);border:1px solid var(--border);font:600 13px/1 var(--font-sans);color:var(--text-secondary)}
+.f-chip svg{color:var(--text-muted)}
+.f-badge{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 12px;border-radius:999px;background:var(--warning-subtle);border:1px solid color-mix(in oklch,var(--warning) 35%,transparent);font:700 13px/1 var(--font-sans);color:var(--warning-strong)}
+.f-badge[data-tone="urgent"]{background:var(--accent-subtle);border-color:var(--rust-100);color:var(--accent)}
+.f-link{display:inline-flex;align-items:center;gap:8px;font:600 14px/1 var(--font-sans);color:var(--text-secondary);text-decoration:underline;text-decoration-color:var(--paper-400);text-underline-offset:4px;white-space:nowrap}.f-link:hover{color:var(--text-primary);text-decoration-color:currentColor}.f-link svg{transition:transform 200ms cubic-bezier(.2,.7,.2,1)}.f-link:hover svg{transform:translateX(2px)}.f-link span{text-decoration:inherit}
+@media (prefers-reduced-motion:reduce){.f-row:hover .f-ph img{transform:none}}
+@media (max-width:1023px){.f-main{grid-template-columns:1fr}.f-main>:nth-child(2){display:none}}
+@media (max-width:767px){.f-foot{flex-direction:column;align-items:stretch!important}.f-foot>div{justify-content:space-between}}
+@media (max-width:519px){.f-row{grid-template-columns:1fr}.f-ph{min-height:220px}}
+</style>
+</helmet>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Navbar" signed-in="{{ true }}" hint-size="100%,72px"></x-import>
+<main class="container" data-screen-label="Favourites" style="padding-top:clamp(36px,5vw,72px);padding-bottom:var(--section-gap)">
+<header style="display:grid;gap:16px;max-width:860px;margin-bottom:clamp(40px,5vw,64px)">
+<div style="display:flex;align-items:center;gap:12px">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Squiggle" width="{{ 36 }}" height="{{ 10 }}" cycles="{{ 2 }}" hint-size="36px,10px"></x-import>
+<span class="t-overline t-muted">Saved cats</span>
+</div>
+<h1 class="t-display-m">{{ headline }} <em>{{ headlineEm }}</em></h1>
+</header>
+
+<sc-if value="{{ hasSaved }}" hint-placeholder-val="{{ true }}">
+<div class="f-main" style="display:grid;column-gap:var(--grid-gutter);row-gap:48px;align-items:start">
+<ol style="list-style:none;margin:0;padding:0;display:grid;gap:16px">
+<sc-for list="{{ saved }}" as="c" hint-placeholder-count="4">
+<li class="f-row" style="display:grid;gap:clamp(16px,2.4vw,28px);padding:14px;background:var(--surface);border:1px solid var(--border);border-radius:20px">
+<a href="Profile.dc.html?id={{ c.id }}" class="f-ph" style="display:block;overflow:hidden;border-radius:14px"><img src="{{ c.photo }}" alt="{{ c.name }}" style="width:100%;height:100%;object-fit:cover;display:block"></a>
+<div style="display:grid;grid-template-rows:auto auto auto 1fr auto;gap:8px;min-width:0;padding:6px 4px 2px 0">
+<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px">
+<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;min-width:0">
+<a href="Profile.dc.html?id={{ c.id }}" class="t-name" style="text-decoration:none;color:var(--text-primary)">{{ c.name }}</a>
+<sc-if value="{{ c.badge }}" hint-placeholder-val="{{ false }}"><span class="f-badge" data-tone="{{ c.badgeTone }}"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="clock" size="{{ 14 }}" hint-size="14px,14px"></x-import>{{ c.badge }}</span></sc-if>
+</div>
+<span style="margin:-6px -6px 0 0"><x-import component-from-global-scope="CATDesignSystem_3eda1e.IconButton" icon="heart" pressed="{{ true }}" label="{{ c.removeLabel }}" on-click="{{ c.remove }}" hint-size="40px,40px"></x-import></span>
+</div>
+<p class="t-tagline" style="margin:0;font-size:17px;text-wrap:pretty">{{ c.line }}</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:6px">
+<span class="f-chip"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="calendar" size="{{ 14 }}" hint-size="14px,14px"></x-import>{{ c.age }}</span><span class="f-chip"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="user" size="{{ 14 }}" hint-size="14px,14px"></x-import>{{ c.sex }}</span><span class="f-chip"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="map-pin" size="{{ 14 }}" hint-size="14px,14px"></x-import>{{ c.location }}</span>
+</div>
+<div></div>
+<div class="f-foot" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;border-top:1px solid var(--border)">
+<div style="display:flex;align-items:center;gap:10px;min-width:0"><span style="flex:none;color:var(--text-muted);display:grid"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="{{ c.noteIcon }}" size="{{ 18 }}" hint-size="18px,18px"></x-import></span><p style="margin:0;font:500 13px/1.45 var(--font-sans);color:var(--text-muted);max-width:440px;text-wrap:pretty"><strong style="font-weight:700;color:var(--text-secondary)">{{ c.noteLead }}</strong> {{ c.noteRest }}</p></div>
+<div style="display:flex;align-items:center;gap:16px;flex:none">
+<a href="Profile.dc.html?id={{ c.id }}" class="f-link"><span>View profile</span><x-import component-from-global-scope="CATDesignSystem_3eda1e.Icon" name="arrow-right" size="{{ 16 }}" hint-size="16px,16px"></x-import></a>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Button" variant="primary" icon-end="arrow-right" href="{{ c.ctaHref }}" hint-size="auto,44px">{{ c.cta }}</x-import>
+</div>
+</div>
+</div>
+</li>
+</sc-for>
+</ol>
+<div></div>
+<aside style="display:grid;gap:28px;position:sticky;top:96px">
+<sc-if value="{{ isGuest }}" hint-placeholder-val="{{ false }}">
+<div style="display:grid;gap:12px;padding:22px;background:var(--surface);border:1px solid var(--border);border-radius:20px">
+<span style="font:800 20px/1.1 'Between 2','Bricolage Grotesque',var(--font-headline);letter-spacing:-.03em">Saved on this device only</span>
+<p style="margin:0;font:400 14.5px/1.5 var(--font-sans);color:var(--text-secondary);text-wrap:pretty">Sign in to keep them on your phone and laptop, and hear if someone else applies.</p>
+<div style="margin-top:4px"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Button" size="s" on-click="{{ openAuth }}" hint-size="auto,40px">Sign in</x-import></div>
+</div>
+</sc-if>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Notice" tone="info" title="Pepper has an application pending" hint-size="100%,120px">Someone else applied on Sunday. Podil Street is still taking backup applications.</x-import>
+<div style="display:grid;gap:10px">
+<span class="t-overline t-muted">How saving works</span>
+<p class="t-secondary" style="margin:0;font-size:15px">Saving doesn't reserve a cat. We'll email you if a saved cat is adopted or their status changes.</p>
+</div>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.TextLink" arrow="{{ true }}" href="Browse.dc.html" hint-size="auto,24px">Keep browsing</x-import>
+</aside>
+</div>
+</sc-if>
+
+<sc-if value="{{ isEmpty }}" hint-placeholder-val="{{ false }}">
+<div style="border-top:1px solid var(--border);padding-top:48px">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.EmptyState" title="No saved cats yet." photo="photos/ginger-sleep.jpg" actions="{{ emptyActions }}" hint-size="100%,320px">Tap the heart on any cat to keep them here. Saving doesn't reserve them — it just helps you decide.</x-import>
+</div>
+</sc-if>
+
+<section data-screen-label="Recently viewed" style="margin-top:var(--section-gap);display:grid;gap:32px">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.SquiggleDivider" label="Recently viewed" hint-size="100%,24px"></x-import>
+<div class="u-scroll">
+<sc-for list="{{ recent }}" as="r" hint-placeholder-count="6">
+<a href="Profile.dc.html?id={{ r.id }}" style="flex:none;display:grid;gap:10px;justify-items:center;text-align:center;text-decoration:none;width:120px">
+<img src="{{ r.photo }}" alt="" style="width:112px;height:112px;border-radius:50%;object-fit:cover;display:block">
+<span class="t-name" style="font-size:20px">{{ r.name }}</span>
+<span class="t-caption">{{ r.when }}</span>
+</a>
+</sc-for>
+</div>
+</section>
+</main>
+<sc-if value="{{ toast }}" hint-placeholder-val="{{ false }}">
+<div style="position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:50">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Toast" action="Undo" on-action="{{ undo }}" on-close="{{ closeToast }}" hint-size="360px,52px">{{ toastText }}</x-import>
+</div>
+</sc-if>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Footer" hint-size="100%,360px"></x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;empty&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { removed: [], last: null };
+  componentDidMount() {
+    this.forceEmpty = /empty/.test(location.search) || this.props.empty;
+    this.un = window.CATE_SAVED && window.CATE_SAVED.subscribe(() => this.forceUpdate());
+    this.ua = window.CATE_AUTH && window.CATE_AUTH.subscribe(() => this.forceUpdate());
+    if (!window.CATE_MOCK) this.t = setInterval(() => { if (window.CATE_MOCK) { clearInterval(this.t); this.forceUpdate(); } }, 40);
+  }
+  componentWillUnmount() { clearInterval(this.t); clearTimeout(this.tt); this.un && this.un(); this.ua && this.ua(); }
+  remove(c) {
+    window.CATE_SAVED && window.CATE_SAVED.has(c.id) && window.CATE_SAVED.toggle(c.id);
+    this.setState({ last: c });
+    clearTimeout(this.tt); this.tt = setTimeout(() => this.setState({ last: null }), 6000);
+  }
+  renderVals() {
+    const D = window.CATE_MOCK;
+    const notes = {
+      "0142": { note: "Saved 3 days ago. Maya at Podil Street says she's had two visits this week.", cta: "Start application", ctaHref: "Apply.dc.html" },
+      "0133": { note: "Status changed Sunday. You can still apply as a backup.", badge: "Pending", badgeTone: "pending", cta: "Apply as backup", ctaHref: "Apply.dc.html" },
+      "0088": { note: "Waiting 212 days. Senior fee waived this month.", badge: "Waiting longest", badgeTone: "urgent", cta: "Book a visit", ctaHref: "" },
+      "0114": { note: "Saved last week from Troieshchyna.", cta: "Book a visit", ctaHref: "" },
+    };
+    const words = ["No cats", "One cat", "Two cats", "Three cats", "Four cats", "Five cats", "Six cats", "Seven cats", "Eight cats", "Nine cats"];
+    const base = { isGuest: !!(window.CATE_AUTH && !window.CATE_AUTH.user()), openAuth: () => window.CATE_AUTH && window.CATE_AUTH.open(), emptyActions: React.createElement(window.CATDesignSystem_3eda1e ? window.CATDesignSystem_3eda1e.Button : "a", { href: "Browse.dc.html" }, "Browse cats"), undo: () => { const l = this.state.last; if (l && window.CATE_SAVED && !window.CATE_SAVED.has(l.id)) window.CATE_SAVED.toggle(l.id); this.setState({ last: null }); }, closeToast: () => this.setState({ last: null }) };
+    if (!D) return { ...base, count: 4, hasSaved: true, isEmpty: false, headline: "Four cats", headlineEm: "on your mind." };
+    const ids = this.forceEmpty ? [] : (window.CATE_SAVED ? window.CATE_SAVED.list() : Object.keys(notes));
+    const saved = ids.map((id) => D.byId(id)).filter(Boolean).map((c) => {
+      const id = c.id; const sh = (D.sheltersAll || []).find((x) => x.name === c.shelter);
+      const n0 = notes[id] || { note: c.line, cta: "Start application", ctaHref: "" };
+      const nt = { ...n0, ctaHref: n0.ctaHref || (n0.cta === "Book a visit" ? (sh ? sh.href + "#contact" : "Shelters.dc.html") : "Apply.dc.html?id=" + id) };
+      if (/^Apply\.dc\.html$/.test(nt.ctaHref)) nt.ctaHref += "?id=" + id;
+      const m = /^(.+?\.)\s*(.*)$/.exec(nt.note) || [0, nt.note, ""];
+      return { ...c, ...nt, badge: nt.badge || "", noteLead: m[1], noteRest: m[2], noteIcon: nt.badge ? "info" : "file-text", removeLabel: "Remove " + c.name + " from saved", remove: () => this.remove(c) };
+    });
+    const n = saved.length;
+    return {
+      ...base,
+      saved, count: n, hasSaved: n > 0, isEmpty: n === 0,
+      headline: n ? (words[n] || n + " cats") : "Nothing here", headlineEm: n ? "on your mind." : "— yet.",
+      recent: [["0157", "2 h ago"], ["0109", "Yesterday"], ["0121", "Yesterday"], ["0149", "Mon"], ["0126", "Mon"], ["0160", "Last week"]].map(([id, when]) => ({ ...D.byId(id), when })),
+      toast: !!this.state.last, toastText: this.state.last ? this.state.last.name + " removed from saved." : "",
+    };
+  }
+}
+</script>
+</body>
+</html>

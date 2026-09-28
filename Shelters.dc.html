@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<style>html,body{margin:0;background:#F4EFE5;color:#1E1B17}@view-transition{navigation:auto}::view-transition-old(root),::view-transition-new(root){animation-duration:140ms;animation-timing-function:ease}@media (prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}}h1,h2,h3,h4,h1 em,h2 em,h3 em,.t-display-xl,.t-display-l,.t-display-m,.t-display-xl em,.t-display-l em,.t-display-m em,.t-h1,.t-h2,.t-h3,.c-block__t,.c-stat__n,.t-name,.t-name-l,.c-cat__name,.c-shelter__name{font-family:'Between 2','Bricolage Grotesque',var(--font-headline)!important;font-weight:800!important;font-style:normal!important}.t-name,.t-name-l,.c-cat__name,.c-shelter__name,.t-h3,h3{letter-spacing:-.035em!important}.t-name,.t-name-l,.c-cat__name{font-family:'Between 2','Bricolage Grotesque','Manrope',sans-serif!important;font-style:normal!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/fonts/Manrope-normal-var.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/fonts/DMSerifDisplay-normal.woff2" crossorigin>
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/colors.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/typography.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/base.css">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/tokens/components.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+<link rel="stylesheet" href="cate.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
+<script src="./support.js"></script>
+<script src="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/_ds_bundle.js"></script>
+<script src="cate-data.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+
+<link rel="icon" type="image/png" href="assets/icon-cream.png">
+<link rel="apple-touch-icon" href="assets/icon-rust.png">
+<link rel="stylesheet" href="_ds/cat-design-system-3eda1ed3-8f62-44f8-8290-659192f6dcc0/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+<link rel="stylesheet" href="cate.css">
+<style>
+.d-head{grid-template-columns:minmax(0,7fr) minmax(0,1fr) minmax(0,4fr)}
+.d-feat{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+.d-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:1023px){.d-head,.d-feat{grid-template-columns:1fr}.d-head>:nth-child(2){display:none}.d-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:639px){.d-grid{grid-template-columns:1fr}}
+</style>
+</helmet>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Navbar" current="#shelters" signed-in="{{ true }}" hint-size="100%,72px"></x-import>
+<main class="container" data-screen-label="Shelter directory" style="padding-top:clamp(36px,5vw,72px);padding-bottom:var(--section-gap)">
+<div class="d-head" style="display:grid;column-gap:var(--grid-gutter);row-gap:20px;align-items:end">
+<h1 class="t-display-m">Six shelters. Every cat <em>known by name.</em></h1>
+<div></div>
+<p class="t-secondary" style="margin:0;font-size:16px">Every shelter on CATÉ is visited by us before it's listed. They set their own fees and read every application themselves.</p>
+</div>
+
+<a href="Shelter.dc.html?id=podil" class="d-feat" data-screen-label="Featured shelter" style="display:grid;gap:0;margin-top:clamp(40px,5vw,72px);text-decoration:none;color:inherit;background:var(--surface-elevated);border-radius:var(--radius-block);overflow:hidden">
+<img src="photos/kitchen-cat.jpg" alt="A cat on the kitchen counter at Podil Street Rescue" style="width:100%;height:100%;min-height:340px;object-fit:cover;display:block">
+<div style="display:grid;gap:18px;align-content:center;padding:clamp(28px,4vw,56px)">
+<span class="t-overline t-muted">Near you · 2.4 mi</span>
+<h2 class="t-h1">Podil Street Rescue</h2>
+<p class="t-quote" style="font-size:21px;line-height:1.4;margin:0;color:var(--text-secondary)">Started in a courtyard off Kostiantynivska in 2017, with one cat and a borrowed carrier.</p>
+<div class="c-cat__meta" style="font-size:14px"><span>31 cats in care</span><span>412 adopted</span><span>Replies in ~1 day</span></div>
+<span style="font:600 15px var(--font-sans);color:var(--accent);text-decoration:underline;text-underline-offset:4px">Visit their page</span>
+</div>
+</a>
+
+<section style="margin-top:clamp(56px,7vw,96px)">
+<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding-bottom:20px;border-bottom:1px solid var(--border)">
+<div style="flex:1 1 280px;max-width:380px"><x-import component-from-global-scope="CATDesignSystem_3eda1e.Input" icon="search" placeholder="Shelter name or district" value="{{ q }}" on-change="{{ setQ }}" aria-label="Search shelters" hint-size="100%,48px"></x-import></div>
+<sc-for list="{{ chips }}" as="f" hint-placeholder-count="4">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.FilterChip" selected="{{ f.on }}" on-click="{{ f.toggle }}" count="{{ f.count }}" hint-size="auto,40px">{{ f.label }}</x-import>
+</sc-for>
+</div>
+<p class="t-caption" style="margin:16px 0 32px">{{ summary }}</p>
+<sc-if value="{{ hasResults }}" hint-placeholder-val="{{ true }}">
+<div class="d-grid" style="display:grid;gap:var(--grid-gutter)">
+<sc-for list="{{ results }}" as="s" hint-placeholder-count="6">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.ShelterCard" shelter="{{ s }}" href="{{ s.href }}" hint-size="100%,260px"></x-import>
+</sc-for>
+</div>
+</sc-if>
+<sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.EmptyState" title="No shelter matches that — yet." actions="{{ clearAction }}" hint-size="100%,200px">Try a nearby district, or remove a filter. Shelters in Irpin and Bucha take adopters from across Kyiv.</x-import>
+</sc-if>
+</section>
+
+<div id="partner" style="margin-top:var(--section-gap);max-width:760px">
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.ColorBlock" tone="charcoal" eyebrow="For shelters" title="Caring for cats in Ukraine?" line="List them on CATÉ. It's free, and it always will be." link-label="Talk to us" href="mailto:shelters@cate.org.ua?subject=Listing%20our%20cats%20on%20CAT%C3%89" hint-size="100%,260px"></x-import>
+</div>
+</main>
+<x-import component-from-global-scope="CATDesignSystem_3eda1e.Footer" hint-size="100%,360px"></x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { q: "", f: [] };
+  componentDidMount() { if (!window.CATE_MOCK) this.t = setInterval(() => { if (window.CATE_MOCK) { clearInterval(this.t); this.forceUpdate(); } }, 40); }
+  componentWillUnmount() { clearInterval(this.t); }
+  renderVals() {
+    const D = window.CATE_MOCK;
+    const P = (n) => "photos/" + n + ".jpg";
+    const all = D ? D.sheltersAll : [];
+    const defs = [["open", "Open today"], ["weekend", "Weekend visits"], ["kittens", "Kittens"], ["seniors", "Senior cats"]];
+    const q = this.state.q.trim().toLowerCase();
+    const results = all.filter((s) => (!q || (s.name + " " + s.area).toLowerCase().includes(q)) && this.state.f.every((t) => s.tags.includes(t)));
+    const toggle = (k) => () => this.setState((st) => ({ f: st.f.includes(k) ? st.f.filter((x) => x !== k) : [...st.f, k] }));
+    const DS = window.CATDesignSystem_3eda1e;
+    return {
+      q: this.state.q, setQ: (e) => this.setState({ q: e && e.target ? e.target.value : e }),
+      chips: defs.map(([k, label]) => ({ label, on: this.state.f.includes(k), toggle: toggle(k), count: all.filter((s) => s.tags.includes(k)).length })),
+      results, hasResults: results.length > 0, noResults: D && results.length === 0,
+      summary: results.length === all.length ? "All " + all.length + " shelters, nearest first" : results.length + " of " + all.length + " shelters",
+      clearAction: DS ? React.createElement(DS.Button, { variant: "secondary", onClick: () => this.setState({ q: "", f: [] }) }, "Clear filters") : null,
+    };
+  }
+}
+</script>
+</body>
+</html>

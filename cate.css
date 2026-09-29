@@ -77,6 +77,8 @@ h1 em,h2 em,h3 em,.t-display-xl em,.t-display-l em,.t-display-m em,.t-h1 em{font
 
 /* audit 2: 12px type floor, 24px+ link targets, nav state for icon destinations */
 .c-meter__ends,.c-search__k,.c-gallery__count,.c-verified,.c-badge,.cate-cards .c-cat .c-cat__status .c-badge{font-size:12px!important}
+.c-badge--solid,.cate-cards .c-cat .c-cat__status .c-badge{padding:8px 12px 8px 11px!important;line-height:12px!important;text-box:trim-both cap alphabetic;align-items:center}
+@supports not (text-box:trim-both cap alphabetic){.c-badge--solid,.cate-cards .c-cat .c-cat__status .c-badge{padding:7px 12px 6px 11px!important}}
 @media (max-width:639px){.c-link,.f-link{padding-block:12px;margin-block:-12px}}
 .cf-form input{align-self:stretch}
 .c-nav [aria-current="page"].c-iconbtn,.c-nav__saved [aria-current="page"]{color:var(--accent);background:var(--accent-subtle)}
